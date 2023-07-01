@@ -1,0 +1,19 @@
+// bases
+
+@import './bases/variables';
+
+//componentes
+@import './components/swiper';
+
+
+// inicialización 
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    /* para que un rem quede en 10 px */
+    font-size: 62.5%; 
+}
