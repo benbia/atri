@@ -2,24 +2,46 @@
 
 const swiper = new Swiper('.swiper', {
     // Optional parameters
-    direction: 'vertical',
     loop: true,
-  
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
+    autoplay: {
+        delay: 0,
     },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
+    speed: 3500,          //add
+    slidesPerView: 3,     //add
+
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+          slidesPerView: 2,
+          spaceBetween: 20
+        },
+        // when window width is >= 480px
+        480: {
+          slidesPerView: 3,
+          spaceBetween: 30
+        },
+      }
   });
 
-// algo mas?
+// hamburguer menu
+
+let navLinks = document.querySelector(".navbar_links");
+let menuOpenBtn = document.querySelector(".navbar .bx-menu");
+let menuCloseBtn = document.querySelector(".navbar_links .bx-x");
+menuOpenBtn.onclick = function() {
+navLinks.style.left = "0";
+}
+menuCloseBtn.onclick = function() {
+navLinks.style.left = "-100%";
+}
+
+// sidebar submenu open close js code
+let htmlcssArrow = document.querySelector(".inst-arrow");
+htmlcssArrow.onclick = function() {
+ navLinks.classList.toggle("show1");
+}
+
+let jsArrow = document.querySelector(".socios-arrow");
+jsArrow.onclick = function() {
+ navLinks.classList.toggle("show2");
+}

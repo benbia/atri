@@ -8,32 +8,93 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <!-- css -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- tipografias -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
 </head>
 <body>
+    <header>
+        <nav>
+            <div class="navbar">
+                <i class='bx bx-menu menu_icon'></i>
+                <a class="logo_inicio" href="./index.html"><img src="./img/logoatricirculo+letra-removebg-preview.png" height="35px" alt="logo de la ATRI sin fondo con simbolo y letras en naranja"></a>
+                <div class="navbar_links">
+                    <div class="sidenav_logo">
+                        <a class="logo_inicio--mobile" href="./index.html"><img src="./img/logoatricirculo+letra-removebg-preview.png" height="35px" alt="logo de la ATRI sin fondo con simbolo y letras en naranja"></a>
+                        <i class='bx bx-x cerrar'></i>
+                    </div>
+                    <ul class="links">
+                        <li><a href="./index.html" class="link_nav">Inicio</a></li>
+                        <li class="link_nav">
+                            Institucional
+                            <i class='bx bx-chevron-down arrow inst-arrow'></i>
+                            <ul class="inst-submenu submenu">
+                                <li><a href="" class="link_nav--drop">Marco Juridico</a></li>
+                                <li><a href="" class="link_nav--drop">Publicaciones</a></li>
+                            </ul>
+                        </li>
+                        <li class="link_nav">Socios ATRI
+                            <i class='bx bx-chevron-down arrow socios-arrow'></i>
+                            <ul class="socios-submenu submenu">
+                                <li><a href="" class="link_nav--drop">Regístrate</a></li>
+                                <li><a href="" class="link_nav--drop">Cuotas y pagos</a></li>
+                                <li><a href="" class="link_nav--drop">Beneficios</a></li>
+                                <li><a href="" class="link_nav--drop">Estatutos</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li><a href="" class="link_nav">Eventos</a></li>
+                        <li><a href="" class="link_registro">Regístrate</a></li>
+                    </ul>
+                </div>
+                <a href="" class="link_registro--mobile">Regístrate</a></li>
+            </div>
+        </nav>
+    </header>
 
 <!-- Slider main container -->
 <div class="swiper">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
       <!-- Slides -->
-      <div class="swiper-slide">Slide 1</div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
+      <div class="swiper-slide">
+        <img src="./img/empresa1.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="./img/empresa2.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="./img/empresa3.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="./img/empresa4.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="./img/empresa5.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="./img/empresa6.jpg" alt="">
+      </div>
       ...
     </div>
     <!-- If we need pagination -->
     <div class="swiper-pagination"></div>
   
     <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
+    <!-- <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div> -->
   
     <!-- If we need scrollbar -->
-    <div class="swiper-scrollbar"></div>
+    <!-- <div class="swiper-scrollbar"></div> -->
   </div>
 
 <!-- scripts -->
+
+<!-- carousel -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<!-- script personal -->
 <script src="script/script.js"></script>
 </body>
 </html>
