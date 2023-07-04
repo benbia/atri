@@ -101,7 +101,7 @@ nav {
     position: absolute;
     top: 70px;
     line-height: 40px;
-    background: rgba($color: $blanco, $alpha: 0.8);
+    background: rgba($color: $blanco, $alpha: 0.95);
     box-shadow: 0 1px 2px rgba($color: $color-gris, $alpha: 0.1);
     border-radius: 0 0 10px 10px;
     display: none;  //para q inicialmente no se vea
@@ -210,10 +210,13 @@ nav {
         box-shadow: 0 5px 10px rgba($color: $color-gris, $alpha: 0.1);
         transition: all 0.5s ease;
         z-index: 1000;
+        overflow-y: scroll;
 
         .links {
             flex-direction: column;
             align-items: start !important;
+            padding-bottom: 1rem;
+            overflow-y: scroll;
 
             li {
                 display: block !important;
@@ -232,6 +235,7 @@ nav {
         box-shadow: none !important;
         align-items: start !important;
         width: 100%;
+        overflow-y: scroll;
 
         li {
             padding: 0 !important ;

@@ -2,6 +2,7 @@
 
 const swiper = new Swiper('.swiper', {
     // Optional parameters
+    allowTouchMove: false,
     loop: true,
     autoplay: {
         delay: 0,

@@ -1,6 +1,7 @@
 .swiper {
   width: 100%;
   height: 250px;
+  margin-top: 1.5rem;
 }
 .swiper .swiper-wrapper {
   height: 200px;
@@ -18,6 +19,77 @@
 }
 .swiper .swiper-wrapper .swiper-slide img {
   width: 80%;
+}
+
+@media screen and (max-width: 576px) {
+  .swiper {
+    margin-top: 2rem;
+    height: 50%;
+  }
+  .swiper-wrapper {
+    height: 50%;
+  }
+  .swiper-slide {
+    height: 47%;
+  }
+}
+.section1 {
+  height: 100vh;
+  margin-bottom: 5rem;
+}
+.section1 .h1 {
+  text-align: center;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 5rem;
+  z-index: 1;
+  width: 100%;
+}
+@media screen and (max-width: 576px) {
+  .section1 .h1 {
+    font-size: 12vw;
+  }
+}
+
+.section2, .section3 {
+  padding: 3rem;
+  padding-bottom: 0;
+}
+
+.h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-weight: bold;
+  font-size: 4rem;
+  color: black;
+  margin-bottom: 4rem;
+}
+@media screen and (max-width: 576px) {
+  .h2 {
+    margin-bottom: 3.5rem;
+    font-size: 3.7rem;
+  }
+}
+
+.p_normal {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  color: black;
+  margin-bottom: 1.5rem;
+}
+.p_normal strong {
+  font-weight: 500;
+}
+
+.ul_texto {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  color: black;
+  margin-left: 4rem;
+  margin-bottom: 1.5rem;
 }
 
 nav {
@@ -107,7 +179,7 @@ nav {
   position: absolute;
   top: 70px;
   line-height: 40px;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.95);
   box-shadow: 0 1px 2px rgba(148, 148, 155, 0.1);
   border-radius: 0 0 10px 10px;
   display: none;
@@ -194,10 +266,13 @@ nav {
     box-shadow: 0 5px 10px rgba(148, 148, 155, 0.1);
     transition: all 0.5s ease;
     z-index: 1000;
+    overflow-y: scroll;
   }
   .navbar_links .links {
     flex-direction: column;
     align-items: start !important;
+    padding-bottom: 1rem;
+    overflow-y: scroll;
   }
   .navbar_links .links li {
     display: block !important;
@@ -213,6 +288,7 @@ nav {
     box-shadow: none !important;
     align-items: start !important;
     width: 100%;
+    overflow-y: scroll;
   }
   .submenu li {
     padding: 0 !important;
@@ -227,6 +303,140 @@ nav {
   }
   .link_nav--drop {
     text-align: left !important;
+  }
+}
+.parallax_inicio {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/index_parallax.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 50px;
+}
+
+.parallax_beneficios {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/beneficios_parallax.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 50px;
+}
+
+.parallax_cuotas {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cuotas_parallax.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 50px;
+}
+
+.parallax_publicaciones {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/publicaciones_parallax.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 50px;
+}
+
+.parallax_eventos {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/eventos_parallax.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 50px;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: table;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  margin-top: 8rem;
+  background-color: #f48424;
+  padding: 4rem 3rem;
+}
+.footer .footer_datos {
+  display: flex;
+}
+.footer .footer_datos .footer_info {
+  width: 50%;
+}
+.footer .footer_datos .footer_info .p_footer {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  color: white;
+}
+
+.mail {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  color: white;
+}
+
+.redes {
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+  margin-top: 4rem;
+}
+.redes .link_redes .icono_redes {
+  font-size: 5rem;
+  color: white;
+}
+
+.footer_img {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-left: 10%;
+}
+.footer_img img {
+  width: 80%;
+  opacity: 0.9;
+}
+
+@media screen and (max-width: 900px) {
+  .footer_img {
+    display: none;
+  }
+  .footer {
+    padding-bottom: 6rem;
+  }
+  .footer .footer_datos {
+    flex-direction: column;
+    width: 100%;
+  }
+  .footer .footer_datos .footer_info {
+    width: 100%;
+  }
+  .footer .footer_datos .footer_info .p_footer {
+    margin-bottom: 0.7rem;
+    font-size: 1.7rem;
+  }
+  .footer .redes {
+    justify-content: center;
+  }
+  .footer .redes .icono_redes {
+    font-size: 4.5rem;
   }
 }
 * {
