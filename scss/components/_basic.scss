@@ -49,6 +49,14 @@
     }
 }
 
+.p_chica {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    color:black;
+    margin-bottom: 1.5rem;
+}
+
 .ul_texto {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
@@ -58,9 +66,7 @@
     margin-bottom: 1.5rem;
 }
 
-// beneficios
-
-.ul_beneficios {
+.ul_normal {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     font-size: 2rem;
@@ -69,14 +75,27 @@
     margin-left: 3rem;
 }
 
-.div_beneficios {
+.div_sombras {
 
     border-radius: 50px;
     background: #ffffff;
     box-shadow:  7px 7px 27px #bfbfbf,
              -7px -7px 27px #ffffff;
     padding: 3rem;
+    margin-bottom: 2rem;
 }
+
+.h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    color:black;
+    margin-bottom: 1rem;
+}
+
+// beneficios
+
+
 
 .link_web--beneficios {
     font-family: 'Poppins', sans-serif;
@@ -85,18 +104,42 @@
     color: blue;
 }
 
-// algo
+// cuotas y formas de pago
+
+.iframe_pdf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    
+    iframe {
+        border: 8px $color-gris solid;
+        border-radius: 25px;
+    }
+}
 
 
 // media q
 
 @media screen and (max-width: 576px) {
 
-    .div_beneficios {
+    .div_sombras {
         padding: 2rem 3rem;
 
-        .ul_beneficios {
-            margin-left: 2rem;
+    }
+
+    .ul_normal {
+        margin-left: 2rem;
+    }
+
+    .iframe_pdf {
+        
+        iframe {
+            border: 4px $color-gris solid;
+            border-radius: 25px;
+            width: 80%;
+            height: auto;
         }
     }
 }
