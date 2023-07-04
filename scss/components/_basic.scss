@@ -57,3 +57,46 @@
     margin-left: 4rem;
     margin-bottom: 1.5rem;
 }
+
+// beneficios
+
+.ul_beneficios {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    color:black;
+    margin-bottom: 3rem;
+    margin-left: 3rem;
+}
+
+.div_beneficios {
+
+    border-radius: 50px;
+    background: #ffffff;
+    box-shadow:  7px 7px 27px #bfbfbf,
+             -7px -7px 27px #ffffff;
+    padding: 3rem;
+}
+
+.link_web--beneficios {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1.7rem;
+    color: blue;
+}
+
+// algo
+
+
+// media q
+
+@media screen and (max-width: 576px) {
+
+    .div_beneficios {
+        padding: 2rem 3rem;
+
+        .ul_beneficios {
+            margin-left: 2rem;
+        }
+    }
+}
