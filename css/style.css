@@ -18,7 +18,7 @@
   align-items: center;
 }
 .swiper .swiper-wrapper .swiper-slide img {
-  width: 80%;
+  width: 75%;
 }
 
 @media screen and (max-width: 576px) {
@@ -36,6 +36,7 @@
 .section1 {
   height: 100vh;
   margin-bottom: 4rem;
+  padding: 2rem;
 }
 .section1 .h1 {
   text-align: center;
