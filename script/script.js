@@ -5,9 +5,9 @@ const swiper = new Swiper('.swiper', {
     allowTouchMove: false,
     loop: true,
     autoplay: {
-        delay: 0,
+        delay: 100,
     },
-    speed: 3500,          //add
+    speed: 3250,          //add
     slidesPerView: 3,     //add
 
     breakpoints: {

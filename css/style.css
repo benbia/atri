@@ -36,7 +36,6 @@
 .section1 {
   height: 100vh;
   margin-bottom: 4rem;
-  padding: 2rem;
 }
 .section1 .h1 {
   text-align: center;
@@ -50,6 +49,7 @@
 @media screen and (max-width: 576px) {
   .section1 .h1 {
     font-size: 12vw;
+    padding: 1.5rem;
   }
 }
 
@@ -514,6 +514,89 @@ nav {
   }
   .footer .redes .icono_redes {
     font-size: 4.5rem;
+  }
+}
+.evento {
+  background-color: #47a5ae;
+  border-radius: 25px;
+  width: 70%;
+  margin-bottom: 2rem;
+  box-shadow: 7px 7px 27px #bfbfbf, -7px -7px 27px #ffffff;
+}
+.evento .evento_titulo {
+  background-color: #f48424;
+  border-radius: 25px;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.evento .evento_titulo .h3-evento {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  color: black;
+}
+.evento .evento_titulo .p_normal-evento {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  color: black;
+}
+.evento .evento_info {
+  display: flex;
+  gap: 3rem;
+  padding: 2rem;
+}
+.evento .evento_info .ul_evento {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  color: white;
+  margin: 1rem;
+  margin-left: 4rem;
+  margin-bottom: 20px;
+}
+.evento .evento_info .ul_evento .evento_item {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  text-decoration: none;
+}
+.evento .evento_info .ul_evento .evento_item:hover {
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+}
+.evento .evento_info img {
+  border-radius: 25px;
+  width: 50%;
+}
+
+.div_eventos {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+@media screen and (max-width: 576px) {
+  .evento {
+    width: 100%;
+  }
+  .evento .evento_titulo .p_normal-evento {
+    padding-left: 1rem;
+  }
+  .evento .evento_info {
+    flex-direction: column;
+  }
+  .evento .evento_info img {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .evento {
+    width: 100%;
   }
 }
 * {
