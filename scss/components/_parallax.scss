@@ -3,7 +3,7 @@
         linear-gradient(
             rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.5)
-        ),url("../../img/index_parallax.jpg");
+        ),url("../img/index_parallax.jpg");
     @include parallax;
 }
 
@@ -12,7 +12,7 @@
     linear-gradient(
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
-    ),url("../../img/beneficios_parallax.jpg");
+    ),url("../img/beneficios_parallax.jpg");
     @include parallax;
 }
 
@@ -21,7 +21,7 @@
         linear-gradient(
             rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.5)
-        ),url("../../img/cuotas_parallax.jpg");
+        ),url("../img/cuotas_parallax.jpg");
     @include parallax;
 }
 
@@ -30,7 +30,7 @@
     linear-gradient(
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
-    ),url("../../img/publicaciones_parallax.jpg");
+    ),url("../img/publicaciones_parallax.jpg");
     @include parallax; 
 }
 
@@ -39,7 +39,7 @@
         linear-gradient(
             rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.5)
-        ),url("../../img/eventos_parallax.jpg");
+        ),url("../img/eventos_parallax.jpg");
     @include parallax;
 }
 
@@ -48,7 +48,7 @@
         linear-gradient(
             rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.5)
-        ),url("../../img/parallax_estatutos.jpg");
+        ),url("../img/parallax_estatutos.jpg");
     @include parallax;
 }
 
@@ -57,7 +57,7 @@
         linear-gradient(
             rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.5)
-        ),url("../../img/parallax_marcojuridico.jpg");
+        ),url("../img/parallax_marcojuridico.jpg");
     @include parallax;
 }
 

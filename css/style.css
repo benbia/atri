@@ -393,7 +393,7 @@ nav {
   }
 }
 .parallax_inicio {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/index_parallax.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/index_parallax.jpg");
   height: 100%;
   background-attachment: fixed;
   background-position: center;
@@ -403,7 +403,7 @@ nav {
 }
 
 .parallax_beneficios {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/beneficios_parallax.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/beneficios_parallax.jpg");
   height: 100%;
   background-attachment: fixed;
   background-position: center;
@@ -413,7 +413,7 @@ nav {
 }
 
 .parallax_cuotas {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/cuotas_parallax.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cuotas_parallax.jpg");
   height: 100%;
   background-attachment: fixed;
   background-position: center;
@@ -423,7 +423,7 @@ nav {
 }
 
 .parallax_publicaciones {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/publicaciones_parallax.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/publicaciones_parallax.jpg");
   height: 100%;
   background-attachment: fixed;
   background-position: center;
@@ -433,7 +433,7 @@ nav {
 }
 
 .parallax_eventos {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/eventos_parallax.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/eventos_parallax.jpg");
   height: 100%;
   background-attachment: fixed;
   background-position: center;
@@ -443,7 +443,7 @@ nav {
 }
 
 .parallax_estatutos {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/parallax_estatutos.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/parallax_estatutos.jpg");
   height: 100%;
   background-attachment: fixed;
   background-position: center;
@@ -453,7 +453,7 @@ nav {
 }
 
 .parallax_marco-juridico {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/parallax_marcojuridico.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/parallax_marcojuridico.jpg");
   height: 100%;
   background-attachment: fixed;
   background-position: center;
