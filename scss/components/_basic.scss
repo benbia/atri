@@ -1,6 +1,6 @@
 .section1 {
-    height: 100vh;
-    margin-bottom: 4rem;
+    height: 60vh;
+    margin-bottom: 2rem;
 
     .h1 {
         text-align: center;
@@ -10,10 +10,12 @@
         font-size: 5rem;
         z-index: 1;
         width: 100%;
+        padding-top: 3rem;
     
         @media screen and (max-width: 576px) {
-            font-size: 12vw;
-            padding: 1.5rem;
+            font-size: 10.5vw;
+            padding: 0 1.5rem;
+            padding-top: 4rem;
         }
     }
 }
@@ -28,7 +30,7 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-weight: bold;
-    font-size: 4rem;
+    font-size: 3.5rem;
     color:black;
     margin-bottom: 4rem;
     margin-top: 2rem;
@@ -42,7 +44,7 @@
 .p_normal {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
-    font-size: 2rem;
+    font-size: 1.8rem;
     color:black;
     margin-bottom: 1.5rem;
 
@@ -54,7 +56,7 @@
 .p_chica {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
-    font-size: 1.5rem;
+    font-size: 1.45rem;
     color:black;
     margin-bottom: 1.5rem;
 }
@@ -62,7 +64,7 @@
 .ul_texto {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
-    font-size: 2rem;
+    font-size: 1.8rem;
     color:black;
     margin-left: 4rem;
     margin-bottom: 1.5rem;
@@ -71,7 +73,7 @@
 .ul_normal {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
-    font-size: 2rem;
+    font-size: 1.8rem;
     color:black;
     margin-bottom: 3rem;
     margin-left: 3rem;
@@ -102,7 +104,7 @@
 .link_web--beneficios {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     color: blue;
 }
 
@@ -169,5 +171,15 @@
             width: 80%;
             height: auto;
         }
+    }
+
+    .h2 {
+        font-size: 3.3rem;
+    }
+}
+
+@media screen and (max-width: 992px) and (orientation: landscape) {
+    .section1 {
+        height: 100vh;
     }
 }
