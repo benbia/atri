@@ -167,6 +167,13 @@
   border: 8px #94949b solid;
 }
 
+.no-seleccionable {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 @media screen and (max-width: 576px) {
   .div_sombras {
     padding: 2rem 3rem;

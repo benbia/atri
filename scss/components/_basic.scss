@@ -150,6 +150,15 @@
     }
 }
 
+// no seleccionable
+
+.no-seleccionable {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+}
+
 // media q
 
 @media screen and (max-width: 576px) {
