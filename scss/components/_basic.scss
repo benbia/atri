@@ -17,6 +17,11 @@
             padding: 0 1.5rem;
             padding-top: 4rem;
         }
+
+        @media screen and (max-width: 992px) and (orientation: landscape) {
+            font-size: 6.3vw;
+        }
+
     }
 }
 
@@ -96,6 +101,78 @@
     color:black;
     margin-bottom: 1rem;
 }
+
+.section2 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    .formamos_parte {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+
+        @media screen and (max-width: 576px) {
+            flex-direction: column;
+            align-items: flex-start;
+    
+        }
+
+        @media screen and (max-width: 992px) and (orientation: landscape) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .h2_integrantes {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            font-weight: bold;
+            font-size: 2.5rem;
+            color:$color-gris;
+            
+            @media screen and (max-width: 576px) {
+                font-size: 2.7rem;
+            }
+        }
+        .miembros {
+        display: flex;
+        flex-direction: row;
+        gap: 7px;
+
+        @media screen and (max-width: 576px) {
+            flex-direction: column;
+    
+        }
+
+        .miembro_logo {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            background: $blanco;
+            border-radius: 50px;
+            border-radius: 50px;
+            background: #ffffff;
+            box-shadow:  7px 7px 14px #d9d9d9,
+                        -7px -7px 14px #ffffff;
+            padding: 1.5rem;
+
+            img {
+                height: 70px;
+
+                @media screen and (max-width: 576px) {
+                    width: 80%;
+                    height: auto;
+            
+                }
+            }
+        }
+    }
+    }
+}
+
 
 // beneficios
 
@@ -189,6 +266,6 @@
 
 @media screen and (max-width: 992px) and (orientation: landscape) {
     .section1 {
-        height: 100vh;
+        height: 120vh;
     }
 }

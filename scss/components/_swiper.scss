@@ -29,12 +29,13 @@
 @media screen and (max-width: 576px) {
     .swiper {
         margin-top: 2rem;
-        height: 50%;
+        height: 70%;
     }
     .swiper-wrapper {
         height: 50%;
     }
     .swiper-slide {
-        height: 47%;
+        height: 50% !important;
+        margin: 7px;
     }
 }

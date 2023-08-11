@@ -24,13 +24,14 @@
 @media screen and (max-width: 576px) {
   .swiper {
     margin-top: 2rem;
-    height: 50%;
+    height: 70%;
   }
   .swiper-wrapper {
     height: 50%;
   }
   .swiper-slide {
-    height: 47%;
+    height: 50% !important;
+    margin: 7px;
   }
 }
 .section1 {
@@ -52,6 +53,11 @@
     font-size: 10.5vw;
     padding: 0 1.5rem;
     padding-top: 4rem;
+  }
+}
+@media screen and (max-width: 992px) and (orientation: landscape) {
+  .section1 .h1 {
+    font-size: 6.3vw;
   }
 }
 
@@ -129,6 +135,72 @@
   margin-bottom: 1rem;
 }
 
+.section2 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.section2 .formamos_parte {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+@media screen and (max-width: 576px) {
+  .section2 .formamos_parte {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media screen and (max-width: 992px) and (orientation: landscape) {
+  .section2 .formamos_parte {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.section2 .formamos_parte .h2_integrantes {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: #94949b;
+}
+@media screen and (max-width: 576px) {
+  .section2 .formamos_parte .h2_integrantes {
+    font-size: 2.7rem;
+  }
+}
+.section2 .formamos_parte .miembros {
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+}
+@media screen and (max-width: 576px) {
+  .section2 .formamos_parte .miembros {
+    flex-direction: column;
+  }
+}
+.section2 .formamos_parte .miembros .miembro_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 50px;
+  border-radius: 50px;
+  background: #ffffff;
+  box-shadow: 7px 7px 14px #d9d9d9, -7px -7px 14px #ffffff;
+  padding: 1.5rem;
+}
+.section2 .formamos_parte .miembros .miembro_logo img {
+  height: 70px;
+}
+@media screen and (max-width: 576px) {
+  .section2 .formamos_parte .miembros .miembro_logo img {
+    width: 80%;
+    height: auto;
+  }
+}
+
 .link_web--beneficios {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
@@ -193,7 +265,7 @@
 }
 @media screen and (max-width: 992px) and (orientation: landscape) {
   .section1 {
-    height: 100vh;
+    height: 120vh;
   }
 }
 nav {
@@ -440,7 +512,7 @@ nav {
 }
 
 .parallax_publicaciones {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/publicaciones_parallax.webp");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/publicaciones_parallax.webp") !important;
   height: 100%;
   background-attachment: fixed;
   background-position: center;
