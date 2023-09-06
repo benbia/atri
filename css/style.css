@@ -673,8 +673,10 @@ nav {
   font-size: 2rem;
   color: white;
   margin: 1rem;
-  margin-left: 4rem;
   margin-bottom: 20px;
+  padding-left: 2.3rem;
+  overflow-x: hidden;
+  word-wrap: break-word;
 }
 .evento .evento_info .ul_evento .evento_item {
   color: white;
