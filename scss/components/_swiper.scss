@@ -97,6 +97,10 @@
         height: 118vh !important;
     }
 
+    @media screen and (max-width: 412px) {
+        height: 130vh !important;
+    }
+
     @media screen and (max-width: 380px) {
         height: 109vh !important;
     }
@@ -121,6 +125,10 @@
 
         @media screen and (max-width: 600px) {
             height: 205vh;
+        }
+
+        @media screen and (max-width: 412px) {
+            height: 215vh !important;
         }
 
         @media screen and (max-width: 380px) {

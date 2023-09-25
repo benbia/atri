@@ -91,6 +91,11 @@
     height: 118vh !important;
   }
 }
+@media screen and (max-width: 412px) {
+  .swiper_proximos, .swiper_2023, .swiper_2022 {
+    height: 130vh !important;
+  }
+}
 @media screen and (max-width: 380px) {
   .swiper_proximos, .swiper_2023, .swiper_2022 {
     height: 109vh !important;
@@ -117,6 +122,11 @@
 @media screen and (max-width: 600px) {
   .swiper_proximos .swiper-wrapper, .swiper_2023 .swiper-wrapper, .swiper_2022 .swiper-wrapper {
     height: 205vh;
+  }
+}
+@media screen and (max-width: 412px) {
+  .swiper_proximos .swiper-wrapper, .swiper_2023 .swiper-wrapper, .swiper_2022 .swiper-wrapper {
+    height: 215vh !important;
   }
 }
 @media screen and (max-width: 380px) {
