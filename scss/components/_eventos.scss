@@ -1,45 +1,78 @@
-.evento {
-
-    background-color: $color-azul;
-    border-radius: 25px;
-    width: 70%;
-    margin-bottom: 2rem;
+.evento_sombra {
     box-shadow:  7px 7px 27px #bfbfbf,
              -7px -7px 27px #ffffff;
+}
 
-    .evento_titulo {
-        background-color: $color-naranja;
-        border-radius: 25px;
-        padding: 1rem 2rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+.evento {
+    width: 100%;
+    border-radius: 50px;
+    background: #ffffff;
+    height: 700px;
 
-        .h3-evento {
-            font-family: 'Poppins', sans-serif;
-            font-weight: 600;
-            font-size: 2rem;
-            color:black;
-        }
+    @media screen and (max-width: 600px) {
+        height: 57%;
+    }
+    
+    .foto_reson {
+        width: 100%;
+        height: 45%;
+        background-image: linear-gradient(
+            rgba($color-azul, 0.35),
+            rgba($color-azul, 0.35)
+        ),url("../img/resonancia_magnetica_inical.jpg");
+        background-size: 100%;
+        background-size: cover;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
 
-        .p_normal-evento {
-            font-family: 'Poppins', sans-serif;
-            font-weight: 300;
-            font-size: 2rem;
-            color:black;
+        @media screen and (max-width: 600px) {
+            height: 200px;
         }
     }
 
-    .evento_info {
-        display: flex;
-        gap: 3rem;
-        padding: 2rem;
+    .informacion {
+        padding: 3rem;
+        .titulo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+
+            @media screen and (max-width: 600px) {
+                flex-direction: column-reverse;
+                gap: 20px;
+            }
+
+            .titulo_evento {
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                font-size: 1.75rem;
+                color:black;
+            }
+
+            .fecha {
+                background-color: $color-naranja;
+                border-radius: 25px;
+                padding: 1rem 2rem;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                font-size: 1.5rem;
+                color:black;
+
+                @media screen and (max-width: 600px) {
+                    justify-self: center;
+                    width: 100%;
+                    text-align: center;
+                    font-size: 1.6rem;
+                }
+            }
+        }
 
         .ul_evento {
             font-family: 'Poppins', sans-serif;
             font-weight: 300;
-            font-size: 2rem;
-            color:white;
+            font-size: 1.7rem;
+            color:black;
             margin: 1rem;
             margin-bottom: 20px;
             padding-left: 2.3rem;
@@ -48,64 +81,136 @@
             
             
             .evento_item {
-                color: white;
+                color: black;
                 font-family: 'Poppins', sans-serif;
                 font-weight: 500;
-                font-size: 2rem;
+                font-size: 1.7rem;
                 text-decoration: none;
         
                 &:hover {
-                    color: rgba(255, 255, 255, 0.8);
+                    color: rgba($negro, 0.8);
                     cursor: pointer;
                 }
             }
         }
-
-        img {
-            border-radius: 25px;
-            width: 50%;
-        }
-    
     }
 }
 
-.div_eventos {
-    display: flex;
-    flex-direction: column;
-    gap: 2.5rem;
+// fotos 
+
+.foto_minas {
+    background-image: linear-gradient(
+            rgba($color-azul, 0.35),
+            rgba($color-azul, 0.35)
+        ),url("../img/Evento\ Minas\ 2023.jpg");
+
+    @include foto_evento;
 }
 
+.foto_2_9_2023 {
+    background-image: linear-gradient(
+            rgba($color-azul, 0.35),
+            rgba($color-azul, 0.35)
+        ),url("../img/evento_radiologia_2023.jpg");
 
-// media q 
-
-@media screen and (max-width: 576px) { 
-
-    .evento {
-
-        width: 100%;
-
-        .evento_titulo {
-
-            .p_normal-evento {
-                padding-left: 1rem;
-            }
-        }
-
-        .evento_info {
-            flex-direction: column;
-
-            img {
-                width: 100%;
-                margin-bottom: 2rem;
-            }
-        }
-    }
+    @include foto_evento;
 }
 
-@media screen and (max-width: 1200px) {
+.foto_2_9_2023-2 {
+    background-image: linear-gradient(
+            rgba($color-azul, 0.35),
+            rgba($color-azul, 0.35)
+        ),url("../img/evento_reuniones_acad.jpeg");
 
-    .evento {
+    @include foto_evento;
+}
 
-        width: 100%;
-    }
+.foto_sorteo2023 {
+    background-image: linear-gradient(
+            rgba($color-azul, 0.35),
+            rgba($color-azul, 0.35)
+        ),url("../img/SORTEO\ -\ WEB.png");
+
+    @include foto_evento;
+}
+
+.foto_present_libro {
+    background-image: linear-gradient(
+            rgba($color-azul, 0.35),
+            rgba($color-azul, 0.35)
+        ),url("../img/P1.jpg");
+
+    @include foto_evento;
+}
+
+.foto_seminario_bayer_2023 {
+    background-image: linear-gradient(
+            rgba($color-azul, 0.35),
+            rgba($color-azul, 0.35)
+        ),url("../img/Flyer\ Seminario\ -\ Es\ -\ Completo.png");
+
+    @include foto_evento;
+}
+
+.foto_sanjo_2023 {
+    background-image: linear-gradient(
+        rgba($color-azul, 0.35),
+        rgba($color-azul, 0.35)
+    ),url("../img/programa_san_jose.jpeg");
+
+    @include foto_evento; 
+}
+
+.foto_rivera {
+    background-image: linear-gradient(
+        rgba($color-azul, 0.35),
+        rgba($color-azul, 0.35)
+    ),url("../img/banner_rivera.jpeg");
+
+    @include foto_evento; 
+}
+
+.foto_julio_22 {
+    background-image: linear-gradient(
+        rgba($color-azul, 0.35),
+        rgba($color-azul, 0.35)
+    ),url("../img/evento_julio_22.jpg");
+
+    @include foto_evento;
+}
+
+.foto_5_5_22 {
+    background-image: linear-gradient(
+        rgba($color-azul, 0.35),
+        rgba($color-azul, 0.35)
+    ),url("../img/fundamentos_de_pacs_dicom.jpg");
+
+    @include foto_evento;
+}
+
+.foto_getafe {
+    background-image: linear-gradient(
+        rgba($color-azul, 0.35),
+        rgba($color-azul, 0.35)
+    ),url("../img/evento_getafe.jpg");
+
+    @include foto_evento;
+}
+
+.foto_15_9_22 {
+    background-image: linear-gradient(
+        rgba($color-azul, 0.35),
+        rgba($color-azul, 0.35)
+    ),url("../img/curso_reso_sept_22.jpg");
+
+    @include foto_evento; 
+}
+
+.foto_1_09_22 {
+    background-image: linear-gradient(
+        rgba($color-azul, 0.35),
+        rgba($color-azul, 0.35)
+    ),url("../img/enferm_22.jpg");
+
+    @include foto_evento;
 }

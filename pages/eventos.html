@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <!-- Google tag (gtag.js) --> 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3E1E3PPBYG"></script> 
-    <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-3E1E3PPBYG'); </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3E1E3PPBYG"></script>
+    <script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-3E1E3PPBYG'); </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventos - ATRI</title>
     <meta name="description" content="Asociación de Técnicos en Radiaciones e Imagenología - Eventos">
     <!-- tipografias -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- carousel -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    </noscript>
     <!-- css -->
     <link rel="stylesheet" href="../css/style.css">
     <!-- box icons -->
@@ -19,15 +29,20 @@
     <link rel="shortcut icon" href="../img/logo_atri-removebg-preview.png" type="image/x-icon">
 
 </head>
+
 <body>
     <header>
         <nav>
             <div class="navbar">
                 <i class='bx bx-menu menu_icon'></i>
-                <a class="logo_inicio" href="../index.html"><img src="../img/logoatricirculo+letra-removebg-preview (1).png" alt="logo de la ATRI sin fondo con simbolo y letras en naranja"></a>
+                <a class="logo_inicio" href="../index.html"><img
+                        src="../img/logoatricirculo+letra-removebg-preview (1).png"
+                        alt="logo de la ATRI sin fondo con simbolo y letras en naranja"></a>
                 <div class="navbar_links">
                     <div class="sidenav_logo">
-                        <a class="logo_inicio--mobile" href="../index.html"><img src="../img/logoatricirculo+letra-removebg-preview (1).png" alt="logo de la ATRI sin fondo con simbolo y letras en naranja"></a>
+                        <a class="logo_inicio--mobile" href="../index.html"><img
+                                src="../img/logoatricirculo+letra-removebg-preview (1).png"
+                                alt="logo de la ATRI sin fondo con simbolo y letras en naranja"></a>
                         <i class='bx bx-x cerrar'></i>
                     </div>
                     <ul class="links">
@@ -36,71 +51,142 @@
                             Institucional
                             <i class='bx bx-chevron-down arrow inst-arrow'></i>
                             <ul class="inst-submenu submenu">
-                                <li><a href="./marco_juridico.html" class="link_nav--drop no-seleccionable">Marco Juridico</a></li>
-                                <li><a href="./publicaciones.html" class="link_nav--drop no-seleccionable">Publicaciones</a></li>
+                                <li><a href="./marco_juridico.html" class="link_nav--drop no-seleccionable">Marco
+                                        Juridico</a></li>
+                                <li><a href="./publicaciones.html"
+                                        class="link_nav--drop no-seleccionable">Publicaciones</a></li>
                             </ul>
                         </li>
                         <li class="link_nav no-seleccionable">Socios ATRI
                             <i class='bx bx-chevron-down arrow socios-arrow'></i>
                             <ul class="socios-submenu submenu">
-                                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeuaLd8k3Dwxc4FdNn0CjZtAC9AEehv8uXZXa185SinxEe58A/viewform" target="_blank" class="link_nav--drop">Regístrate</a></li>
-                                <li><a href="./cuotas_y_forma.html" class="link_nav--drop no-seleccionable">Cuotas y pagos</a></li>
-                                <li><a href="./beneficios.html" class="link_nav--drop no-seleccionable">Beneficios</a></li>
-                                <li><a href="./estatutos.html" class="link_nav--drop no-seleccionable">Estatutos</a></li>
-                                
+                                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeuaLd8k3Dwxc4FdNn0CjZtAC9AEehv8uXZXa185SinxEe58A/viewform"
+                                        target="_blank" class="link_nav--drop">Regístrate</a></li>
+                                <li><a href="./cuotas_y_forma.html" class="link_nav--drop no-seleccionable">Cuotas y
+                                        pagos</a></li>
+                                <li><a href="./beneficios.html" class="link_nav--drop no-seleccionable">Beneficios</a>
+                                </li>
+                                <li><a href="./estatutos.html" class="link_nav--drop no-seleccionable">Estatutos</a>
+                                </li>
+
                             </ul>
                         </li>
                         <li><a href="./eventos.html" class="link_nav no-seleccionable">Eventos</a></li>
-                        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeuaLd8k3Dwxc4FdNn0CjZtAC9AEehv8uXZXa185SinxEe58A/viewform" target="_blank" class="link_registro">Regístrate</a></li>
+                        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeuaLd8k3Dwxc4FdNn0CjZtAC9AEehv8uXZXa185SinxEe58A/viewform"
+                                target="_blank" class="link_registro">Regístrate</a></li>
                     </ul>
                 </div>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeuaLd8k3Dwxc4FdNn0CjZtAC9AEehv8uXZXa185SinxEe58A/viewform" target="_blank" class="link_registro--mobile">Regístrate</a></li>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeuaLd8k3Dwxc4FdNn0CjZtAC9AEehv8uXZXa185SinxEe58A/viewform"
+                    target="_blank" class="link_registro--mobile">Regístrate</a></li>
             </div>
         </nav>
     </header>
+
     <section class="section1">
         <div class="container parallax_eventos">
             <h1 class="h1">Eventos</h1>
         </div>
     </section>
     <section class="section2">
-        <h2 class="h2">2023</h2>
-        <div class="div_eventos">
-            <div class="evento">
-                <div class="evento_titulo">
-                    <h3 class="h3-evento">Diplomatura Superior en Resonancia Magnética Inicial</h3>
-                    <p class="p_normal-evento">Fecha: 1/10/2023</p>
-                </div>
-                <div class="evento_info">
-                    <img class="img_evento" src="../img/resonancia_magnetica_inical.jpg" alt="Ciclo de reuniones académicas 2023">
-                    <ul class="ul_evento">
-                        <li>La actividad se desarrolla en forma virtual</li>
-                        <li>Descuento para Socios ATRI ACTIVOS</li>
-                        <li>Por información: <a target="_blank" class="evento_item" href="mailto:jrios@profesores.umaza.edu.ar">jrios@profesores.umaza.edu.ar</a> o <a target="_blank" class="evento_item" href="mailto:blima@profesores.umaza.edu.ar">blima@profesores.umaza.edu.ar</a></li>
-                        <li>Inscripciones: <a target="_blank" class="evento_item" href="mailto:informes@umaza.edu.ar">informes@umaza.edu.ar</a></li>
+        <!-- Slider main container -->
+        <div id="s_years" class="swiper swiper_years">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide years no-seleccionable">Próximos</div>
+                <div class="swiper-slide years no-seleccionable">Realizados 2023</div>
+                <div class="swiper-slide years no-seleccionable">Realizados 2022</div>
+            </div>
 
-                        <!-- <li>Certificados:</li>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev navigation_button"></div>
+            <div class="swiper-button-next navigation_button"></div>
+
+        </div>
+
+        <!-- proximos eventos -->
+
+        <!-- Slider main container -->
+        <div id="s_proximos" class="swiper swiper_proximos">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper no-seleccionable">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <div class="evento evento_sombra">
+                    <div class="foto_reson"></div>
+                    <div class="informacion">
+                        <div class="titulo">
+                            <h3 class="titulo_evento">Diplomatura Superior en Resonancia Magnética Inicial</h3>
+                            <div class="fecha">1/10/2023</div>
+                        </div>
                         <ul class="ul_evento">
-                            <li><a target="_blank" class="evento_item" href="https://drive.google.com/drive/folders/1wxdkDRJ5mBD753BM8QphniVqi9bDvq4C?usp=share_link">Licenciados</a></li>
-                            <li><a target="_blank" class="evento_item" href="https://drive.google.com/drive/folders/1-JUcI2_R0hreMYgwB8CuEQQNczJR6_nK?usp=share_link">Bachiller</a></li>
-                            <li><a target="_blank" class="evento_item" href="https://drive.google.com/drive/folders/114xgVNIDZlHD21fFNF5rjIKOgzy8j9nB?usp=share_link">Médicos</a></li>
-                            <li><a target="_blank" class="evento_item" href="https://drive.google.com/drive/folders/1ePXARy3AHmR_dgpFNacmOfzg3YN4YTa7?usp=share_link">Otros</a></li>
-                        </ul> -->
+                            <li>La actividad se desarrolla en forma virtual</li>
+                            <li>Descuento para Socios ATRI ACTIVOS</li>
+                            <li>Por información: <a target="_blank" class="evento_item" href="mailto:jrios@profesores.umaza.edu.ar">jrios@profesores.umaza.edu.ar</a> o <a target="_blank" class="evento_item" href="mailto:blima@profesores.umaza.edu.ar">blima@profesores.umaza.edu.ar</a></li>
+                            <li>Inscripciones: <a target="_blank" class="evento_item" href="mailto:informes@umaza.edu.ar">informes@umaza.edu.ar</a></li>
+                            <li><a target="_blank" href="../img/resonancia_magnetica_inical.jpg" class="evento_item">Ver afiche completo</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="evento">
-                <div class="evento_titulo">
-                    <h3 class="h3-evento">Jornada Académica - Minas 2023</h3>
-                    <p class="p_normal-evento">Fecha: 2/09/2023</p>
+            <!-- <div class="swiper-slide">
+                <div class="evento evento_sombra">
+                    <div class="foto"></div>
+                    <div class="informacion">
+                        <div class="titulo">
+                            <h3 class="titulo_evento">Diplomatura Superior en Resonancia Magnética Inicial</h3>
+                            <div class="fecha">1/10/2023</div>
+                        </div>
+                        <ul class="ul_evento">
+                            <li>La actividad se desarrolla en forma virtual</li>
+                            <li>Descuento para Socios ATRI ACTIVOS</li>
+                            <li>Por información: <a target="_blank" class="evento_item" href="mailto:jrios@profesores.umaza.edu.ar">jrios@profesores.umaza.edu.ar</a> o <a target="_blank" class="evento_item" href="mailto:blima@profesores.umaza.edu.ar">blima@profesores.umaza.edu.ar</a></li>
+                            <li>Inscripciones: <a target="_blank" class="evento_item" href="mailto:informes@umaza.edu.ar">informes@umaza.edu.ar</a></li>
+                            <li><a target="_blank" href="../img/resonancia_magnetica_inical.jpg" class="evento_item">Ver afiche completo</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="evento_info">
-                    <img class="img_evento" src="../img/Info distribución.jpg" alt="banner de la jornada 2022 de imagenologia en rivera">
-                    <ul class="ul_evento">
-                        <!-- <li><a target="_blank" class="evento_item" href="https://forms.gle/4Kha6cs618KH4ecM8" target="_blank">Pre-inscripción</a></li>
-                        <li><a target="_blank" class="evento_item" href="https://forms.gle/tMutxsSNsSmKsijH7">Registro de pago</a></li>
-                        <li><a target="_blank" class="evento_item" href="https://drive.google.com/file/d/1mCkZO1B6ULY_dB6pZkWq2xd_0ZdPKYHD/view?usp=drive_link">Información y programa</a></li> -->
+            </div> -->
+            <!-- <div class="swiper-slide">
+                <div class="evento evento_sombra">
+                    <div class="foto"></div>
+                    <div class="informacion">
+                        <div class="titulo">
+                            <h3 class="titulo_evento">Diplomatura Superior en Resonancia Magnética Inicial</h3>
+                            <div class="fecha">1/10/2023</div>
+                        </div>
+                        <ul class="ul_evento">
+                            <li>La actividad se desarrolla en forma virtual</li>
+                            <li>Descuento para Socios ATRI ACTIVOS</li>
+                            <li>Por información: <a target="_blank" class="evento_item" href="mailto:jrios@profesores.umaza.edu.ar">jrios@profesores.umaza.edu.ar</a> o <a target="_blank" class="evento_item" href="mailto:blima@profesores.umaza.edu.ar">blima@profesores.umaza.edu.ar</a></li>
+                            <li>Inscripciones: <a target="_blank" class="evento_item" href="mailto:informes@umaza.edu.ar">informes@umaza.edu.ar</a></li>
+                            <li><a target="_blank" href="../img/resonancia_magnetica_inical.jpg" class="evento_item">Ver afiche completo</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div> -->
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination pagination"></div>
+        </div>
 
-                        <li>Certificados:</li>
+        <!-- realizados 2023 -->
+
+        <!-- Slider main container -->
+        <div id="s_2023" class="swiper swiper_2023 hidden">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper no-seleccionable">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <div class="evento evento_sombra">
+                    <div class="foto_minas"></div>
+                    <div class="informacion">
+                        <div class="titulo">
+                            <h3 class="titulo_evento">Jornada Académica - Minas 2023</h3>
+                            <div class="fecha">2/09/2023</div>
+                        </div>
+                        <ul class="ul_evento">
+                            <li>Certificados:</li>
                         <ul class="ul_evento">
                             <li><a target="_blank" class="evento_item" href="https://drive.google.com/drive/folders/1GzML8H1J0fllTiqtKbw-Rall2lwWAgL5?usp=sharing">Licenciados</a></li>
                             <li><a target="_blank" class="evento_item" href="https://drive.google.com/drive/folders/1h27mcIniQe2dc4wkGMn_kH8VqyvQ9ShT?usp=drive_link">Bachiller</a></li>
@@ -108,61 +194,55 @@
                         </ul>
                         <li><a target="_blank" href="https://drive.google.com/drive/folders/1laNH2AIE3oQFFhBdjf1rT2caa-8M2eBZ?usp=sharing" class="evento_item">Imágenes del evento: Generales</a></li>
                         <li><a target="_blank" href="https://drive.google.com/drive/folders/1uGiE86VTh8E6hpjlNXI5D7pX9xGJ8xbC?usp=sharing" class="evento_item">Imágenes del evento: Reconocimientos</a></li>
+                        <li><a target="_blank" href="../img/Evento Minas 2023.jpg" class="evento_item">Ver afiche completo</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="evento">
-                <div class="evento_titulo">
-                    <h3 class="h3-evento">Radiología Digital Dinámica</h3>
-                    <p class="p_normal-evento">Fecha: 2/09/2023</p>
-                </div>
-                <div class="evento_info">
-                    <img class="img_evento" src="../img/evento_radiologia_2023.jpg" alt="Ciclo de reuniones académicas 2023">
-                    <ul class="ul_evento">
-                        <li>Hora: 13:30 - Online (ZOOM)</li>
-                        <li><a target="_blank" class="evento_item" href="https://zoom.us/j/95811174502?pwd=R0NMTVViN3cyL1g5S3pIYVZGUHV1dz09" target="_blank">Click aquí para acceder al encuentro virtual</a></li>
-                        <li>ID de la reunión: 958 1117 4502</li>
-                        <li>Código de acceso: G5uDMt</li>
-
-                        <!-- <li>Certificados:</li>
+            <div class="swiper-slide">
+                <div class="evento evento_sombra">
+                    <div class="foto_2_9_2023"></div>
+                    <div class="informacion">
+                        <div class="titulo">
+                            <h3 class="titulo_evento">Radiología Digital Dinámica</h3>
+                            <div class="fecha">2/09/2023</div>
+                        </div>
                         <ul class="ul_evento">
-                            <li><a target="_blank" class="evento_item" href="https://drive.google.com/drive/folders/1wxdkDRJ5mBD753BM8QphniVqi9bDvq4C?usp=share_link">Licenciados</a></li>
-                            <li><a target="_blank" class="evento_item" href="https://drive.google.com/drive/folders/1-JUcI2_R0hreMYgwB8CuEQQNczJR6_nK?usp=share_link">Bachiller</a></li>
-                            <li><a target="_blank" class="evento_item" href="https://drive.google.com/drive/folders/114xgVNIDZlHD21fFNF5rjIKOgzy8j9nB?usp=share_link">Médicos</a></li>
-                            <li><a target="_blank" class="evento_item" href="https://drive.google.com/drive/folders/1ePXARy3AHmR_dgpFNacmOfzg3YN4YTa7?usp=share_link">Otros</a></li>
-                        </ul> -->
+                            <li>Hora: 13:30 - Online (ZOOM)</li>
+                            <li><a target="_blank" class="evento_item" href="https://zoom.us/j/95811174502?pwd=R0NMTVViN3cyL1g5S3pIYVZGUHV1dz09" target="_blank">Click aquí para acceder al encuentro virtual</a></li>
+                            <li>ID de la reunión: 958 1117 4502</li>
+                            <li>Código de acceso: G5uDMt</li>
+                            <li><a target="_blank" href="../img/evento_radiologia_2023.jpg" class="evento_item">Ver afiche completo</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            
-            <div class="evento">
-                <div class="evento_titulo">
-                    <h3 class="h3-evento">Ciclo de Reuniones Académicas Virtuales</h3>
-                    <p class="p_normal-evento">Fecha: 2/09/2023</p>
-                </div>
-                <div class="evento_info">
-                    <img class="img_evento" src="../img/evento_reuniones_acad.jpeg" alt="Ciclo de reuniones académicas 2023">
-                    <ul class="ul_evento">
-                        <li>Actividad exlusiva para Socios ATRI</li>
+            <div class="swiper-slide">
+                <div class="evento evento_sombra">
+                    <div class="foto_2_9_2023-2"></div>
+                    <div class="informacion">
+                        <div class="titulo">
+                            <h3 class="titulo_evento">Ciclo de Reuniones Académicas Virtuales</h3>
+                            <div class="fecha">2/09/2023</div>
+                        </div>
+                        <ul class="ul_evento">
+                            <li>Actividad exlusiva para Socios ATRI</li>
                         <li><a target="_blank" class="evento_item" href="https://docs.google.com/forms/d/e/1FAIpQLSfumIh6Er1VOeqpPWFe4ntcLttYwnFRgWSkbzy1mix1CBlmeQ/viewform" target="_blank">Registro e inscripciones</a></li>
-
-                        <!-- <li>Certificados:</li>
-                        <ul class="ul_evento">
-                            <li><a target="_blank" class="evento_item" href="https://drive.google.com/drive/folders/1wxdkDRJ5mBD753BM8QphniVqi9bDvq4C?usp=share_link">Licenciados</a></li>
-                            <li><a target="_blank" class="evento_item" href="https://drive.google.com/drive/folders/1-JUcI2_R0hreMYgwB8CuEQQNczJR6_nK?usp=share_link">Bachiller</a></li>
-                            <li><a target="_blank" class="evento_item" href="https://drive.google.com/drive/folders/114xgVNIDZlHD21fFNF5rjIKOgzy8j9nB?usp=share_link">Médicos</a></li>
-                            <li><a target="_blank" class="evento_item" href="https://drive.google.com/drive/folders/1ePXARy3AHmR_dgpFNacmOfzg3YN4YTa7?usp=share_link">Otros</a></li>
-                        </ul> -->
+                            <li><a target="_blank" href="../img/evento_reuniones_acad.jpeg" class="evento_item">Ver afiche completo</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="evento">
-                <div class="evento_titulo">
-                    <h3 class="h3-evento">Sorteo</h3>
-                    <p class="p_normal-evento">Fecha: 1/09/2023</p>
-                </div>
-                <div class="evento_info">
-                    <img class="img_evento" src="../img/SORTEO - WEB.png" alt="Ciclo de reuniones académicas 2023">
-                    <ul class="ul_evento">
-                        <li>Actividad exlusiva para Socios ATRI</li>
-                        <li>Sorteamos 4 ejemplares del libro "Imagenología por Resonancia Magnética desde cero"</li>
+            <div class="swiper-slide">
+                <div class="evento evento_sombra">
+                    <div class="foto_sorteo2023"></div>
+                    <div class="informacion">
+                        <div class="titulo">
+                            <h3 class="titulo_evento">Sorteo</h3>
+                            <div class="fecha">1/09/2023</div>
+                        </div>
+                        <ul class="ul_evento">
+                        
                         <li>Sorteo realizado. Los favorecidos fueron:
                             <ul class="ul_evento">
                                 <li>(00): Documento [4XXXXX95] y Nombre [In... Ba..]</li>
@@ -171,99 +251,182 @@
                                 <li>(35): Documento [2XXXXX23] y Nombre [Vi... Ve…]</li>
                             </ul>
                         </li>
-
-                        <!-- <li>Certificados:</li>
-                        <ul class="ul_evento">
-                            <li><a target="_blank" class="evento_item" href="https://drive.google.com/drive/folders/1wxdkDRJ5mBD753BM8QphniVqi9bDvq4C?usp=share_link">Licenciados</a></li>
-                            <li><a target="_blank" class="evento_item" href="https://drive.google.com/drive/folders/1-JUcI2_R0hreMYgwB8CuEQQNczJR6_nK?usp=share_link">Bachiller</a></li>
-                            <li><a target="_blank" class="evento_item" href="https://drive.google.com/drive/folders/114xgVNIDZlHD21fFNF5rjIKOgzy8j9nB?usp=share_link">Médicos</a></li>
-                            <li><a target="_blank" class="evento_item" href="https://drive.google.com/drive/folders/1ePXARy3AHmR_dgpFNacmOfzg3YN4YTa7?usp=share_link">Otros</a></li>
-                        </ul> -->
+                        <li><a target="_blank" href="../img/SORTEO - WEB.png" class="evento_item">Ver afiche completo</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="evento">
-                <div class="evento_titulo">
-                    <h3 class="h3-evento">Presentación del libro</h3>
-                    <p class="p_normal-evento">Fecha: 1/09/2023</p>
-                </div>
-                <div class="evento_info">
-                    <img class="img_evento" src="../img/P1.jpg" alt="Ciclo de reuniones académicas 2023">
-                    <ul class="ul_evento">
-                        <li><a target="_blank" href="https://drive.google.com/drive/folders/1Hef_CTPnljqEPVR8Jtg0GLA-hb--c1dX?usp=sharing" class="evento_item">Imágenes del evento</a></li>
-                        <!-- <li>Certificados:</li>
+            <div class="swiper-slide">
+                <div class="evento evento_sombra">
+                    <div class="foto_present_libro"></div>
+                    <div class="informacion">
+                        <div class="titulo">
+                            <h3 class="titulo_evento">Presentación del libro</h3>
+                            <div class="fecha">1/09/2023</div>
+                        </div>
                         <ul class="ul_evento">
-                            <li><a target="_blank" class="evento_item" href="https://drive.google.com/drive/folders/1wxdkDRJ5mBD753BM8QphniVqi9bDvq4C?usp=share_link">Licenciados</a></li>
-                            <li><a target="_blank" class="evento_item" href="https://drive.google.com/drive/folders/1h27mcIniQe2dc4wkGMn_kH8VqyvQ9ShT?usp=drive_link">Bachiller</a></li>
-                            <li><a target="_blank" class="evento_item" href="https://drive.google.com/drive/folders/114xgVNIDZlHD21fFNF5rjIKOgzy8j9nB?usp=share_link">Doctor</a></li>
-                        </ul> -->
+                            <li><a target="_blank" href="https://drive.google.com/drive/folders/1Hef_CTPnljqEPVR8Jtg0GLA-hb--c1dX?usp=sharing" class="evento_item">Imágenes del evento</a></li>
+                            <li><a target="_blank" href="../img/P1.jpg" class="evento_item">Ver afiche completo</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-
-            <div class="evento">
-                <div class="evento_titulo">
-                    <h3 class="h3-evento">Seminario Bayer 2023</h3>
-                    <p class="p_normal-evento">Fecha: 2/08/2023</p>
-                </div>
-                <div class="evento_info">
-                    <img class="img_evento" src="../img/Flyer Seminario - Es - Completo.png" alt="banner del seminario 2023 de bayer">
-                    <ul class="ul_evento">
-                        <li>Actividad sin costo</li>
+            <div class="swiper-slide">
+                <div class="evento evento_sombra">
+                    <div class="foto_seminario_bayer_2023"></div>
+                    <div class="informacion">
+                        <div class="titulo">
+                            <h3 class="titulo_evento">Seminario Bayer 2023</h3>
+                            <div class="fecha">2/08/2023</div>
+                        </div>
+                        <ul class="ul_evento">
+                            <li>Actividad sin costo</li>
                         <li><a target="_blank" class="evento_item" href="https://www.seminariobayer.com/" target="_blank">Informes e inscripción</a></li>
-                        <!-- <li>Certificados:</li>
+                            <li><a target="_blank" href="../img/Flyer Seminario - Es - Completo.png" class="evento_item">Ver afiche completo</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="evento evento_sombra">
+                    <div class="foto_sanjo_2023"></div>
+                    <div class="informacion">
+                        <div class="titulo">
+                            <h3 class="titulo_evento">Jornada Académica de Imagenología - San José</h3>
+                            <div class="fecha">11/03/2023</div>
+                        </div>
+                        <ul class="ul_evento">
+                            <li>Certificados:</li>
+                            <ul class="ul_evento">
+                                <li><a target="_blank" class="evento_item" href="https://drive.google.com/drive/folders/1K124MhbmEACK4Gj4pSTZLmDDJjKcEHYl?usp=share_link">Estudiantes</a></li>
+                                    <li><a target="_blank" class="evento_item" href="https://drive.google.com/drive/folders/1ndZ8F-y88md9mDxqO_BtDpjypvlsFSW6?usp=share_link">Licenciados</a></li>
+                                    <li><a target="_blank" class="evento_item" href="https://drive.google.com/drive/folders/1DAd6Vtz_z7c9dImTQ6p6LYJhyJZ1vDUy?usp=share_link">Médicos</a></li>
+                            </ul>
+                            <li><a target="_blank" href="../img/programa_san_jose.jpeg" class="evento_item">Ver afiche completo</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        
+        </div>
+
+
+        <!-- realizados 2022 -->
+
+        <!-- Slider main container -->
+        <div id="s_2022" class="swiper swiper_2022 hidden">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper no-seleccionable">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <div class="evento evento_sombra">
+                    <div class="foto_rivera"></div>
+                    <div class="informacion">
+                        <div class="titulo">
+                            <h3 class="titulo_evento">Jornada Académica 2022</h3>
+                            <div class="fecha">14-15/10/2022</div>
+                        </div>
+                        <ul class="ul_evento">
+                            <li>Certificados:</li>
                         <ul class="ul_evento">
                             <li><a target="_blank" class="evento_item" href="https://drive.google.com/drive/folders/1wxdkDRJ5mBD753BM8QphniVqi9bDvq4C?usp=share_link">Licenciados</a></li>
                             <li><a target="_blank" class="evento_item" href="https://drive.google.com/drive/folders/1-JUcI2_R0hreMYgwB8CuEQQNczJR6_nK?usp=share_link">Bachiller</a></li>
                             <li><a target="_blank" class="evento_item" href="https://drive.google.com/drive/folders/114xgVNIDZlHD21fFNF5rjIKOgzy8j9nB?usp=share_link">Médicos</a></li>
                             <li><a target="_blank" class="evento_item" href="https://drive.google.com/drive/folders/1ePXARy3AHmR_dgpFNacmOfzg3YN4YTa7?usp=share_link">Otros</a></li>
-                        </ul> -->
-                </div>
-            </div>
-
-
-            
-            <div class="evento">
-                <div class="evento_titulo">
-                    <h3 class="h3-evento">Jornada Académica de Imagenología - San José</h3>
-                    <p class="p_normal-evento">Fecha: 11/03/2023</p>
-                </div>
-                <div class="evento_info">
-                    <img class="img_evento" src="../img/programa_san_jose.jpeg" alt="banner de la jornada 2022 de imagenologia en rivera">
-                    <ul class="ul_evento">
-                        <!-- <li><a target="_blank" class="evento_item" href=" https://drive.google.com/file/d/1Y0j-zHcna9lM7i3dMl3S1jQueDxvJWEH/view?usp=share_link" target="_blank">Información</a></li>
-                        <li><a target="_blank" class="evento_item" href="#">Incripción (costo: $1500)</a></li> -->
-                        <li>Certificados:</li>
-                        <ul class="ul_evento">
-                            <li><a target="_blank" class="evento_item" href="https://drive.google.com/drive/folders/1K124MhbmEACK4Gj4pSTZLmDDJjKcEHYl?usp=share_link">Estudiantes</a></li>
-                                <li><a target="_blank" class="evento_item" href="https://drive.google.com/drive/folders/1ndZ8F-y88md9mDxqO_BtDpjypvlsFSW6?usp=share_link">Licenciados</a></li>
-                                <li><a target="_blank" class="evento_item" href="https://drive.google.com/drive/folders/1DAd6Vtz_z7c9dImTQ6p6LYJhyJZ1vDUy?usp=share_link">Médicos</a></li>
                         </ul>
-                </div>
-            </div>
-        </div>
-        <h2 class="h2">2022</h2>
-        <div class="div_eventos">
-            <div class="evento">
-                <div class="evento_titulo">
-                    <h3 class="h3-evento">Jornada Académica 2022</h3>
-                    <p class="p_normal-evento">Fecha: 14-15/10/2022</p>
-                </div>
-                <div class="evento_info">
-                    <img class="img_evento" src="../img/banner_rivera.jpeg" alt="banner de la jornada 2022 de imagenologia en rivera">
-                    <ul class="ul_evento">
-                        <!-- <li><a target="_blank" class="evento_item" href=" https://drive.google.com/file/d/1Y0j-zHcna9lM7i3dMl3S1jQueDxvJWEH/view?usp=share_link" target="_blank">Información</a></li>
-                        <li><a target="_blank" class="evento_item" href="#">Incripción (costo: $1500)</a></li> -->
-                        <li>Certificados:</li>
-                        <ul class="ul_evento">
-                            <li><a target="_blank" class="evento_item" href="https://drive.google.com/drive/folders/1wxdkDRJ5mBD753BM8QphniVqi9bDvq4C?usp=share_link">Licenciados</a></li>
-                            <li><a target="_blank" class="evento_item" href="https://drive.google.com/drive/folders/1-JUcI2_R0hreMYgwB8CuEQQNczJR6_nK?usp=share_link">Bachiller</a></li>
-                            <li><a target="_blank" class="evento_item" href="https://drive.google.com/drive/folders/114xgVNIDZlHD21fFNF5rjIKOgzy8j9nB?usp=share_link">Médicos</a></li>
-                            <li><a target="_blank" class="evento_item" href="https://drive.google.com/drive/folders/1ePXARy3AHmR_dgpFNacmOfzg3YN4YTa7?usp=share_link">Otros</a></li>
+                            <li><a target="_blank" href="../img/banner_rivera.jpeg" class="evento_item">Ver afiche completo</a></li>
                         </ul>
+                    </div>
                 </div>
             </div>
-            
+            <div class="swiper-slide">
+                <div class="evento evento_sombra">
+                    <div class="foto_julio_22"></div>
+                    <div class="informacion">
+                        <div class="titulo">
+                            <h3 class="titulo_evento">II Congreso Virtual Internacional de Resonancia Magnética</h3>
+                            <div class="fecha">10/07/2022</div>
+                        </div>
+                        <ul class="ul_evento">
+                            <li><a target="_blank" class="evento_item" href="https://76diq.r.bh.d.sendibt3.com/mk/cl/f/sh/1t6Af4Oj9PgrH6iHypndlcvvVrM32i/bprRnLRztjY5" target="_blank">Programa e información</a></li>
+                            <li><a target="_blank" href="../img/evento_julio_22.jpg" class="evento_item">Ver afiche completo</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="evento evento_sombra">
+                    <div class="foto_5_5_22"></div>
+                    <div class="informacion">
+                        <div class="titulo">
+                            <h3 class="titulo_evento">Fundamentos de PACS Y DICOM</h3>
+                            <div class="fecha">5/05/2022</div>
+                        </div>
+                        <ul class="ul_evento">
+                            <li>Organiza: Licenciatura en imagenología EUTM - FMED - UEDLAR</li>
+                            <li><a target="_blank" href="../img/fundamentos_de_pacs_dicom.jpg" class="evento_item">Ver afiche completo</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="evento evento_sombra">
+                    <div class="foto_getafe"></div>
+                    <div class="informacion">
+                        <div class="titulo">
+                            <h3 class="titulo_evento">Iº Congreso Internacional de Ecografía para TSID</h3>
+                            <div class="fecha">15/10/2022</div>
+                        </div>
+                        <ul class="ul_evento">
+                            <li>En el Hospital universitario de Getafe, Madrid, España.</li>
+                            <li><a target="_blank" href="../img/evento_getafe.jpg" class="evento_item">Ver afiche completo</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="evento evento_sombra">
+                    <div class="foto_15_9_22"></div>
+                    <div class="informacion">
+                        <div class="titulo">
+                            <h3 class="titulo_evento">Curso Virtual de RESONANCIA CARDÍACA</h3>
+                            <div class="fecha">15/09/2022</div>
+                        </div>
+                        <ul class="ul_evento">
+                            <li><a target="_blank" class="evento_item" href="https://76diq.r.bh.d.sendibt3.com/mk/cl/f/sh/1t6Af4Oj9PgrH6iHypndlcvvVrM32i/Zi0i4QEidqP5" target="_blank">Programa e información</a></li>
+                            <li><a target="_blank" href="../img/curso_reso_sept_22.jpg" class="evento_item">Ver afiche completo</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="evento evento_sombra">
+                    <div class="foto_1_09_22"></div>
+                    <div class="informacion">
+                        <div class="titulo">
+                            <h3 class="titulo_evento">1° JORNADAS DE ENFERMERÍA CON ESPECIALIZACIÓN EN IMAGENOLOGÍA</h3>
+                            <div class="fecha">1/09/2022</div>
+                        </div>
+                        <ul class="ul_evento">
+                            <li>Actividad sin costo</li>
+                            <li><a target="_blank" class="evento_item" href="https://76diq.r.bh.d.sendibt3.com/mk/cl/f/sh/1t6Af4Oj9PgrH6iHypndlcvvVrM32i/XVIFTXn7t7Bz" target="_blank">Programa e información</a></li>
+                            <li><a target="_blank" href="../img/enferm_22.jpg" class="evento_item">Ver afiche completo</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        
         </div>
+
     </section>
+
+    
 
     <footer class="footer">
         <div class="footer_datos">
@@ -271,13 +434,20 @@
                 <p class="p_footer">Hospital de Clínicas</p>
                 <p class="p_footer">Avenida Italia S/N</p>
                 <p class="p_footer">Montevideo - Uruguay</p>
-                <p class="p_footer">Contacto: <span><a class="mail" href="mailto:uruimagen@gmail.com">uruimagen@gmail.com</a></span></p>
+                <p class="p_footer">Contacto: <span><a class="mail"
+                            href="mailto:uruimagen@gmail.com">uruimagen@gmail.com</a></span></p>
                 <div class="redes">
-                    <a target="_blank" href="https://www.instagram.com/atri.uruguay/" class="link_redes"><i class='bx bxl-instagram icono_redes'></i></a>
-                    <a target="_blank" href="https://twitter.com/atri_uy" class="link_redes"><i class='bx bxl-twitter icono_redes'></i></a>
-                    <a target="_blank" href="https://www.linkedin.com/company/atri-uruguay/" class="link_redes"><i class='bx bxl-linkedin-square icono_redes'></i></a>
-                    <a target="_blank" href="https://www.facebook.com/people/Atri-Uruguay/pfbid02k2dbextFzwK48VNpsD565JKCXzkXG8tuTYDXuFNWgtUhXjaJHcpzVKELdNtNFa3bl/" class="link_redes"><i class='bx bxl-facebook-circle icono_redes'></i></a>
-                    <a href="mailto:uruimagen@gmail.com" class="link_redes"><i class='bx bx-envelope icono_redes'></i></i></a>
+                    <a target="_blank" href="https://www.instagram.com/atri.uruguay/" class="link_redes"><i
+                            class='bx bxl-instagram icono_redes'></i></a>
+                    <a target="_blank" href="https://twitter.com/atri_uy" class="link_redes"><i
+                            class='bx bxl-twitter icono_redes'></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/company/atri-uruguay/" class="link_redes"><i
+                            class='bx bxl-linkedin-square icono_redes'></i></a>
+                    <a target="_blank"
+                        href="https://www.facebook.com/people/Atri-Uruguay/pfbid02k2dbextFzwK48VNpsD565JKCXzkXG8tuTYDXuFNWgtUhXjaJHcpzVKELdNtNFa3bl/"
+                        class="link_redes"><i class='bx bxl-facebook-circle icono_redes'></i></a>
+                    <a href="mailto:uruimagen@gmail.com" class="link_redes"><i
+                            class='bx bx-envelope icono_redes'></i></i></a>
                 </div>
             </div>
             <div class="footer_img">
@@ -287,9 +457,9 @@
     </footer>
 
 
-<!-- scripts -->
-<!-- carousel -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-<!-- script personal -->
-<script src="../script/script.js"></script>
+    <!-- scripts -->
+    <!-- carousel -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- script personal -->
+    <script src="../script/script.js"></script>
 </body>

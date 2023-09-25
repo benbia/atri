@@ -23,4 +23,5 @@ html {
     /* para que un rem quede en 10 px */
     font-size: 62.5%; 
     background-color: $blanco;
+    overflow-x: hidden;
 }

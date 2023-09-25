@@ -1,12 +1,12 @@
-.swiper {
+.swiper_inicio {
   width: 100%;
   height: 250px;
   margin-top: 1.5rem;
 }
-.swiper .swiper-wrapper {
+.swiper_inicio .swiper-wrapper {
   height: 200px;
 }
-.swiper .swiper-wrapper .swiper-slide {
+.swiper_inicio .swiper-wrapper .swiper-slide {
   background: #ffffff;
   border-radius: 50px;
   border-radius: 50px;
@@ -17,21 +17,181 @@
   justify-content: center;
   align-items: center;
 }
-.swiper .swiper-wrapper .swiper-slide img {
+.swiper_inicio .swiper-wrapper .swiper-slide img {
   width: 75%;
 }
 
+.swiper_years {
+  width: 100%;
+  height: 110px !important;
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2.8rem;
+}
+.swiper_years .swiper-wrapper {
+  height: 50px;
+}
+.swiper_years .swiper-wrapper .swiper-slide {
+  background: #ffffff;
+  border-radius: 50px;
+  border-radius: 50px;
+  background: #47a5ae;
+  box-shadow: 7px 7px 14px #d9d9d9, -7px -7px 14px #ffffff;
+  padding: 1.5rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 200ms linear;
+  transform: scale(0.8);
+  opacity: 0.5;
+}
+.swiper_years .swiper-wrapper .swiper-slide.swiper-slide-active {
+  transform: scale(1.2);
+  opacity: 1;
+}
 @media screen and (max-width: 576px) {
-  .swiper {
+  .swiper_years .swiper-wrapper .swiper-slide {
+    width: 80%;
+  }
+}
+
+.navigation_button {
+  color: #656464 !important;
+}
+
+.years {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-weight: bold;
+  font-size: 3rem;
+  color: white;
+  width: 33%;
+}
+@media screen and (max-width: 800px) {
+  .years {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .years {
+    font-size: 1.5rem;
+  }
+}
+
+.swiper_proximos, .swiper_2023, .swiper_2022 {
+  width: 100%;
+  height: 700px !important;
+  margin-top: 1.5rem;
+  padding-bottom: 2.8rem;
+}
+@media screen and (max-width: 600px) {
+  .swiper_proximos, .swiper_2023, .swiper_2022 {
+    height: 118vh !important;
+  }
+}
+@media screen and (max-width: 380px) {
+  .swiper_proximos, .swiper_2023, .swiper_2022 {
+    height: 109vh !important;
+  }
+}
+@media screen and (max-width: 370px) {
+  .swiper_proximos, .swiper_2023, .swiper_2022 {
+    height: 105vh !important;
+  }
+}
+@media screen and (max-width: 360px) {
+  .swiper_proximos, .swiper_2023, .swiper_2022 {
+    height: 110vh !important;
+  }
+}
+@media screen and (max-width: 320px) {
+  .swiper_proximos, .swiper_2023, .swiper_2022 {
+    height: 200vh !important;
+  }
+}
+.swiper_proximos .swiper-wrapper, .swiper_2023 .swiper-wrapper, .swiper_2022 .swiper-wrapper {
+  height: 700px;
+}
+@media screen and (max-width: 600px) {
+  .swiper_proximos .swiper-wrapper, .swiper_2023 .swiper-wrapper, .swiper_2022 .swiper-wrapper {
+    height: 205vh;
+  }
+}
+@media screen and (max-width: 380px) {
+  .swiper_proximos .swiper-wrapper, .swiper_2023 .swiper-wrapper, .swiper_2022 .swiper-wrapper {
+    height: 190vh;
+  }
+}
+@media screen and (max-width: 370px) {
+  .swiper_proximos .swiper-wrapper, .swiper_2023 .swiper-wrapper, .swiper_2022 .swiper-wrapper {
+    height: 180vh;
+  }
+}
+@media screen and (max-width: 360px) {
+  .swiper_proximos .swiper-wrapper, .swiper_2023 .swiper-wrapper, .swiper_2022 .swiper-wrapper {
+    height: 190vh;
+  }
+}
+@media screen and (max-width: 320px) {
+  .swiper_proximos .swiper-wrapper, .swiper_2023 .swiper-wrapper, .swiper_2022 .swiper-wrapper {
+    height: 350vh !important;
+  }
+}
+.swiper_proximos .swiper-wrapper .swiper-slide, .swiper_2023 .swiper-wrapper .swiper-slide, .swiper_2022 .swiper-wrapper .swiper-slide {
+  background: #ffffff;
+  border-radius: 50px;
+  border-radius: 50px;
+  transition: all 200ms linear;
+  transform: scale(0.7);
+  opacity: 0.5;
+}
+.swiper_proximos .swiper-wrapper .swiper-slide.swiper-slide-active, .swiper_2023 .swiper-wrapper .swiper-slide.swiper-slide-active, .swiper_2022 .swiper-wrapper .swiper-slide.swiper-slide-active {
+  transform: scale(0.9);
+  opacity: 1;
+}
+@media screen and (max-width: 576px) {
+  .swiper_proximos .swiper-wrapper .swiper-slide, .swiper_2023 .swiper-wrapper .swiper-slide, .swiper_2022 .swiper-wrapper .swiper-slide {
+    width: 80%;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .swiper_years {
+    height: 70%;
+  }
+  .swiper_years .swiper-wrapper {
+    height: 50%;
+  }
+  .swiper_years .swiper-slide {
+    height: 50% !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .swiper_inicio {
     margin-top: 2rem;
     height: 70%;
   }
-  .swiper-wrapper {
+  .swiper_inicio .swiper-wrapper {
     height: 50%;
   }
-  .swiper-slide {
+  .swiper_inicio .swiper-slide {
     height: 50% !important;
     margin: 7px;
+  }
+  .swiper_years {
+    height: 70%;
+  }
+  .swiper_years .swiper-wrapper {
+    height: 50%;
+  }
+  .swiper_years .swiper-slide {
+    height: 50% !important;
   }
 }
 .section1 {
@@ -487,6 +647,7 @@ nav {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: 100%;
   background-size: cover;
   margin-bottom: 50px;
 }
@@ -497,6 +658,7 @@ nav {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: 100%;
   background-size: cover;
   margin-bottom: 50px;
 }
@@ -507,6 +669,7 @@ nav {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: 100%;
   background-size: cover;
   margin-bottom: 50px;
 }
@@ -517,6 +680,7 @@ nav {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: 100%;
   background-size: cover;
   margin-bottom: 50px;
 }
@@ -527,6 +691,7 @@ nav {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: 100%;
   background-size: cover;
   margin-bottom: 50px;
 }
@@ -537,6 +702,7 @@ nav {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: 100%;
   background-size: cover;
   margin-bottom: 50px;
 }
@@ -547,6 +713,7 @@ nav {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: 100%;
   background-size: cover;
   margin-bottom: 50px;
 }
@@ -635,91 +802,291 @@ nav {
     font-size: 4.5rem;
   }
 }
-.evento {
-  background-color: #47a5ae;
-  border-radius: 25px;
-  width: 70%;
-  margin-bottom: 2rem;
+.evento_sombra {
   box-shadow: 7px 7px 27px #bfbfbf, -7px -7px 27px #ffffff;
 }
-.evento .evento_titulo {
-  background-color: #f48424;
-  border-radius: 25px;
-  padding: 1rem 2rem;
+
+.evento {
+  width: 100%;
+  border-radius: 50px;
+  background: #ffffff;
+  height: 700px;
+}
+@media screen and (max-width: 600px) {
+  .evento {
+    height: 57%;
+  }
+}
+.evento .foto_reson {
+  width: 100%;
+  height: 45%;
+  background-image: linear-gradient(rgba(71, 165, 174, 0.35), rgba(71, 165, 174, 0.35)), url("../img/resonancia_magnetica_inical.jpg");
+  background-size: 100%;
+  background-size: cover;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+@media screen and (max-width: 600px) {
+  .evento .foto_reson {
+    height: 200px;
+  }
+}
+.evento .informacion {
+  padding: 3rem;
+}
+.evento .informacion .titulo {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 2rem;
 }
-.evento .evento_titulo .h3-evento {
+@media screen and (max-width: 600px) {
+  .evento .informacion .titulo {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+}
+.evento .informacion .titulo .titulo_evento {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 1.75rem;
   color: black;
 }
-.evento .evento_titulo .p_normal-evento {
+.evento .informacion .titulo .fecha {
+  background-color: #f48424;
+  border-radius: 25px;
+  padding: 1rem 2rem;
   font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-size: 2rem;
+  font-weight: 600;
+  font-size: 1.5rem;
   color: black;
 }
-.evento .evento_info {
-  display: flex;
-  gap: 3rem;
-  padding: 2rem;
+@media screen and (max-width: 600px) {
+  .evento .informacion .titulo .fecha {
+    justify-self: center;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6rem;
+  }
 }
-.evento .evento_info .ul_evento {
+.evento .informacion .ul_evento {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
-  font-size: 2rem;
-  color: white;
+  font-size: 1.7rem;
+  color: black;
   margin: 1rem;
   margin-bottom: 20px;
   padding-left: 2.3rem;
   overflow-x: hidden;
   word-wrap: break-word;
 }
-.evento .evento_info .ul_evento .evento_item {
-  color: white;
+.evento .informacion .ul_evento .evento_item {
+  color: black;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 1.7rem;
   text-decoration: none;
 }
-.evento .evento_info .ul_evento .evento_item:hover {
-  color: rgba(255, 255, 255, 0.8);
+.evento .informacion .ul_evento .evento_item:hover {
+  color: rgba(0, 0, 0, 0.8);
   cursor: pointer;
 }
-.evento .evento_info img {
-  border-radius: 25px;
-  width: 50%;
+
+.foto_minas {
+  background-image: linear-gradient(rgba(71, 165, 174, 0.35), rgba(71, 165, 174, 0.35)), url("../img/Evento Minas 2023.jpg");
+  width: 100%;
+  height: 40%;
+  background-size: 100%;
+  background-size: cover;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+@media screen and (max-width: 600px) {
+  .foto_minas {
+    height: 200px;
+  }
 }
 
-.div_eventos {
-  display: flex;
-  flex-direction: column;
-  gap: 2.5rem;
+.foto_2_9_2023 {
+  background-image: linear-gradient(rgba(71, 165, 174, 0.35), rgba(71, 165, 174, 0.35)), url("../img/evento_radiologia_2023.jpg");
+  width: 100%;
+  height: 40%;
+  background-size: 100%;
+  background-size: cover;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+@media screen and (max-width: 600px) {
+  .foto_2_9_2023 {
+    height: 200px;
+  }
 }
 
-@media screen and (max-width: 576px) {
-  .evento {
-    width: 100%;
-  }
-  .evento .evento_titulo .p_normal-evento {
-    padding-left: 1rem;
-  }
-  .evento .evento_info {
-    flex-direction: column;
-  }
-  .evento .evento_info img {
-    width: 100%;
-    margin-bottom: 2rem;
+.foto_2_9_2023-2 {
+  background-image: linear-gradient(rgba(71, 165, 174, 0.35), rgba(71, 165, 174, 0.35)), url("../img/evento_reuniones_acad.jpeg");
+  width: 100%;
+  height: 40%;
+  background-size: 100%;
+  background-size: cover;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+@media screen and (max-width: 600px) {
+  .foto_2_9_2023-2 {
+    height: 200px;
   }
 }
-@media screen and (max-width: 1200px) {
-  .evento {
-    width: 100%;
+
+.foto_sorteo2023 {
+  background-image: linear-gradient(rgba(71, 165, 174, 0.35), rgba(71, 165, 174, 0.35)), url("../img/SORTEO - WEB.png");
+  width: 100%;
+  height: 40%;
+  background-size: 100%;
+  background-size: cover;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+@media screen and (max-width: 600px) {
+  .foto_sorteo2023 {
+    height: 200px;
   }
 }
+
+.foto_present_libro {
+  background-image: linear-gradient(rgba(71, 165, 174, 0.35), rgba(71, 165, 174, 0.35)), url("../img/P1.jpg");
+  width: 100%;
+  height: 40%;
+  background-size: 100%;
+  background-size: cover;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+@media screen and (max-width: 600px) {
+  .foto_present_libro {
+    height: 200px;
+  }
+}
+
+.foto_seminario_bayer_2023 {
+  background-image: linear-gradient(rgba(71, 165, 174, 0.35), rgba(71, 165, 174, 0.35)), url("../img/Flyer Seminario - Es - Completo.png");
+  width: 100%;
+  height: 40%;
+  background-size: 100%;
+  background-size: cover;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+@media screen and (max-width: 600px) {
+  .foto_seminario_bayer_2023 {
+    height: 200px;
+  }
+}
+
+.foto_sanjo_2023 {
+  background-image: linear-gradient(rgba(71, 165, 174, 0.35), rgba(71, 165, 174, 0.35)), url("../img/programa_san_jose.jpeg");
+  width: 100%;
+  height: 40%;
+  background-size: 100%;
+  background-size: cover;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+@media screen and (max-width: 600px) {
+  .foto_sanjo_2023 {
+    height: 200px;
+  }
+}
+
+.foto_rivera {
+  background-image: linear-gradient(rgba(71, 165, 174, 0.35), rgba(71, 165, 174, 0.35)), url("../img/banner_rivera.jpeg");
+  width: 100%;
+  height: 40%;
+  background-size: 100%;
+  background-size: cover;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+@media screen and (max-width: 600px) {
+  .foto_rivera {
+    height: 200px;
+  }
+}
+
+.foto_julio_22 {
+  background-image: linear-gradient(rgba(71, 165, 174, 0.35), rgba(71, 165, 174, 0.35)), url("../img/evento_julio_22.jpg");
+  width: 100%;
+  height: 40%;
+  background-size: 100%;
+  background-size: cover;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+@media screen and (max-width: 600px) {
+  .foto_julio_22 {
+    height: 200px;
+  }
+}
+
+.foto_5_5_22 {
+  background-image: linear-gradient(rgba(71, 165, 174, 0.35), rgba(71, 165, 174, 0.35)), url("../img/fundamentos_de_pacs_dicom.jpg");
+  width: 100%;
+  height: 40%;
+  background-size: 100%;
+  background-size: cover;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+@media screen and (max-width: 600px) {
+  .foto_5_5_22 {
+    height: 200px;
+  }
+}
+
+.foto_getafe {
+  background-image: linear-gradient(rgba(71, 165, 174, 0.35), rgba(71, 165, 174, 0.35)), url("../img/evento_getafe.jpg");
+  width: 100%;
+  height: 40%;
+  background-size: 100%;
+  background-size: cover;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+@media screen and (max-width: 600px) {
+  .foto_getafe {
+    height: 200px;
+  }
+}
+
+.foto_15_9_22 {
+  background-image: linear-gradient(rgba(71, 165, 174, 0.35), rgba(71, 165, 174, 0.35)), url("../img/curso_reso_sept_22.jpg");
+  width: 100%;
+  height: 40%;
+  background-size: 100%;
+  background-size: cover;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+@media screen and (max-width: 600px) {
+  .foto_15_9_22 {
+    height: 200px;
+  }
+}
+
+.foto_1_09_22 {
+  background-image: linear-gradient(rgba(71, 165, 174, 0.35), rgba(71, 165, 174, 0.35)), url("../img/enferm_22.jpg");
+  width: 100%;
+  height: 40%;
+  background-size: 100%;
+  background-size: cover;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+@media screen and (max-width: 600px) {
+  .foto_1_09_22 {
+    height: 200px;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -730,6 +1097,7 @@ html {
   /* para que un rem quede en 10 px */
   font-size: 62.5%;
   background-color: #ffffff;
+  overflow-x: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */

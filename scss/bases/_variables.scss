@@ -5,6 +5,7 @@ $color-azul: #47a5ae;
 $color-gris: #94949b;
 $blanco: #ffffff;
 $negro: #000000;
+$color-gris-oscuro: #656464;
 
 // mixin parallax
 
@@ -13,6 +14,20 @@ $negro: #000000;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: 100%;
     background-size: cover;
     margin-bottom: 50px;
+}
+
+@mixin foto_evento {
+    width: 100%;
+    height: 40%;
+    background-size: 100%;
+    background-size: cover;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+
+    @media screen and (max-width: 600px) {
+        height: 200px;
+    }
 }
