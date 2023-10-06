@@ -58,6 +58,8 @@
                 font-weight: 600;
                 font-size: 1.5rem;
                 color:black;
+                margin-left: 1rem;
+                text-align: center;
 
                 @media screen and (max-width: 600px) {
                     justify-self: center;
@@ -93,6 +95,18 @@
                 }
             }
         }
+    }
+}
+
+
+// afiche
+
+.afiche {
+    color: rgba($color-naranja, 0.9) !important;
+
+    &:hover {
+        color: rgba($color-naranja, 0.7) !important;
+        
     }
 }
 
@@ -211,6 +225,24 @@
         rgba($color-azul, 0.35),
         rgba($color-azul, 0.35)
     ),url("../img/enferm_22.jpg");
+
+    @include foto_evento;
+}
+
+.foto_jornada_mamaria {
+    background-image: linear-gradient(
+        rgba($color-azul, 0.35),
+        rgba($color-azul, 0.35)
+    ),url("../img/jornadas_mamarias_2023.jpg");
+
+    @include foto_evento;
+}
+
+.foto_clinica_alemana_23 {
+    background-image: linear-gradient(
+        rgba($color-azul, 0.35),
+        rgba($color-azul, 0.35)
+    ),url("../img/evento_1011_noviembre.jpg");
 
     @include foto_evento;
 }

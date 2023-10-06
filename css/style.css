@@ -870,6 +870,8 @@ nav {
   font-weight: 600;
   font-size: 1.5rem;
   color: black;
+  margin-left: 1rem;
+  text-align: center;
 }
 @media screen and (max-width: 600px) {
   .evento .informacion .titulo .fecha {
@@ -900,6 +902,13 @@ nav {
 .evento .informacion .ul_evento .evento_item:hover {
   color: rgba(0, 0, 0, 0.8);
   cursor: pointer;
+}
+
+.afiche {
+  color: rgba(244, 132, 36, 0.9) !important;
+}
+.afiche:hover {
+  color: rgba(244, 132, 36, 0.7) !important;
 }
 
 .foto_minas {
@@ -1093,6 +1102,36 @@ nav {
 }
 @media screen and (max-width: 600px) {
   .foto_1_09_22 {
+    height: 200px;
+  }
+}
+
+.foto_jornada_mamaria {
+  background-image: linear-gradient(rgba(71, 165, 174, 0.35), rgba(71, 165, 174, 0.35)), url("../img/jornadas_mamarias_2023.jpg");
+  width: 100%;
+  height: 40%;
+  background-size: 100%;
+  background-size: cover;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+@media screen and (max-width: 600px) {
+  .foto_jornada_mamaria {
+    height: 200px;
+  }
+}
+
+.foto_clinica_alemana_23 {
+  background-image: linear-gradient(rgba(71, 165, 174, 0.35), rgba(71, 165, 174, 0.35)), url("../img/evento_1011_noviembre.jpg");
+  width: 100%;
+  height: 40%;
+  background-size: 100%;
+  background-size: cover;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+@media screen and (max-width: 600px) {
+  .foto_clinica_alemana_23 {
     height: 200px;
   }
 }
