@@ -181,8 +181,14 @@
 .link_web--beneficios {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: blue;
+    overflow-x: hidden;
+    word-wrap: break-word;
+}
+
+.no_underline {
+    text-decoration: none;
 }
 
 // cuotas y formas de pago

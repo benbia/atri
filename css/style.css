@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .swiper_inicio {
   width: 100%;
   height: 250px;
@@ -374,8 +375,14 @@
 .link_web--beneficios {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: blue;
+  overflow-x: hidden;
+  word-wrap: break-word;
+}
+
+.no_underline {
+  text-decoration: none;
 }
 
 .iframe_pdf {
@@ -1132,6 +1139,36 @@ nav {
 }
 @media screen and (max-width: 600px) {
   .foto_clinica_alemana_23 {
+    height: 200px;
+  }
+}
+
+.foto_jornada_mercosur_23 {
+  background-image: linear-gradient(rgba(71, 165, 174, 0.35), rgba(71, 165, 174, 0.35)), url("../img/1° JORNADA SOBRE RESPONSABILIDAD MÉDICA DEL MERCOSUR.JPG");
+  width: 100%;
+  height: 40%;
+  background-size: 100%;
+  background-size: cover;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+@media screen and (max-width: 600px) {
+  .foto_jornada_mercosur_23 {
+    height: 200px;
+  }
+}
+
+.foto_jornada_cient_23 {
+  background-image: linear-gradient(rgba(71, 165, 174, 0.35), rgba(71, 165, 174, 0.35)), url("../img/jornada_cient_2023.jpg");
+  width: 100%;
+  height: 40%;
+  background-size: 100%;
+  background-size: cover;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+@media screen and (max-width: 600px) {
+  .foto_jornada_cient_23 {
     height: 200px;
   }
 }

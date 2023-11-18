@@ -246,3 +246,21 @@
 
     @include foto_evento;
 }
+
+.foto_jornada_mercosur_23 {
+    background-image: linear-gradient(
+        rgba($color-azul, 0.35),
+        rgba($color-azul, 0.35)
+    ),url("../img/1°\ JORNADA\ SOBRE\ RESPONSABILIDAD\ MÉDICA\ DEL\ MERCOSUR.JPG");
+
+    @include foto_evento;
+}
+
+.foto_jornada_cient_23 {
+    background-image: linear-gradient(
+        rgba($color-azul, 0.35),
+        rgba($color-azul, 0.35)
+    ),url("../img/jornada_cient_2023.jpg");
+
+    @include foto_evento; 
+}
