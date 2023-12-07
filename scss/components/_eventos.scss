@@ -98,6 +98,30 @@
     }
 }
 
+.no_eventos {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+
+    .logo_eventos {
+        width: 60%;
+
+        @media screen and (max-width: 600px) {
+            width: 70%;
+        }
+
+        @media screen and (max-width: 600px) and (orientation: landscape) {
+            width: 30%;
+        }
+    }
+}
+
+.gris {
+    color: $color-gris;
+}
+
 
 // afiche
 

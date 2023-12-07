@@ -911,6 +911,30 @@ nav {
   cursor: pointer;
 }
 
+.no_eventos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.no_eventos .logo_eventos {
+  width: 60%;
+}
+@media screen and (max-width: 600px) {
+  .no_eventos .logo_eventos {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 600px) and (orientation: landscape) {
+  .no_eventos .logo_eventos {
+    width: 30%;
+  }
+}
+
+.gris {
+  color: #94949b;
+}
+
 .afiche {
   color: rgba(244, 132, 36, 0.9) !important;
 }
