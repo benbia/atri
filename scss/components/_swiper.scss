@@ -5,6 +5,7 @@
 
     .swiper-wrapper {
         height: 200px;
+        transition-timing-function : linear;
         
         .swiper-slide {
             background: $blanco;

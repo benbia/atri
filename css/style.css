@@ -6,6 +6,7 @@
 }
 .swiper_inicio .swiper-wrapper {
   height: 200px;
+  transition-timing-function: linear;
 }
 .swiper_inicio .swiper-wrapper .swiper-slide {
   background: #ffffff;

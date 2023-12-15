@@ -4,10 +4,13 @@ const swiper = new Swiper('.swiper_inicio', {
   // Optional parameters
   allowTouchMove: false,
   loop: true,
+  speed: 7000,
   autoplay: {
-      delay: 100,
+      delay: 1,
+      disableOnInteraction: false,
   },
-  speed: 3250,          //add
+  speed: 7000,
+            //add
   slidesPerView: 3,     //add
 
   breakpoints: {
@@ -133,8 +136,6 @@ var swiper_years = new Swiper(".swiper_years", {
 
 
 // swiper proximos eventos
-
-
 
 var swiper_proximos = new Swiper(".swiper_proximos", {
 
