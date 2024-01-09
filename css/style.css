@@ -1198,6 +1198,21 @@ nav {
   }
 }
 
+.foto_evento_cr_2025 {
+  background-image: linear-gradient(rgba(71, 165, 174, 0.35), rgba(71, 165, 174, 0.35)), url("../img/evento_cr_2025.jpg");
+  width: 100%;
+  height: 40%;
+  background-size: 100%;
+  background-size: cover;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+@media screen and (max-width: 600px) {
+  .foto_evento_cr_2025 {
+    height: 200px;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;

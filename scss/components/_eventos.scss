@@ -288,3 +288,12 @@
 
     @include foto_evento; 
 }
+
+.foto_evento_cr_2025 {
+    background-image: linear-gradient(
+        rgba($color-azul, 0.35),
+        rgba($color-azul, 0.35)
+    ),url("../img/evento_cr_2025.jpg");
+
+    @include foto_evento;
+}
