@@ -1,27 +1,77 @@
-.section1 {
-    height: 60vh;
+.link_home {
+    font-weight: 500;
+    text-decoration: none;
+    color: $color-gris-oscuro
+}
+
+.h1 {
+    color: $color-naranja;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 5.4rem;
+    z-index: 1;
+    width: 100%;
+    padding-top: 3rem;
     margin-bottom: 2rem;
 
-    .h1 {
+    @media screen and (max-width: 600px) {
+        font-size: 9.5vw;
+        padding: 0 ;
+        padding-top: 0;
         text-align: center;
-        color: white;
+        margin-bottom: 3rem;
+    }
+
+    @media screen and (max-width: 992px) and (orientation: landscape) {
+        font-size: 6.3vw;
+    }
+
+}
+
+.h1_inicio {
+    font-size: 5rem;
+}
+
+.p_home {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1.8rem;
+    color:$color-gris-oscuro;
+    margin-bottom: 1rem;
+
+    strong {
+        font-weight: 500; 
+    }
+
+    @media screen and (max-width: 900px) {
+        margin-bottom: 3rem;
+    }
+}
+
+.importante {
+
+    display: flex;
+    justify-content: flex-start;
+
+    @media screen and (max-width: 600px) {
+        justify-content: center;
+    }
+
+    .news_inicio {
+        background-color: $color-azul;
+        border-radius: 25px;
+        padding: 1rem 2rem;
         font-family: 'Poppins', sans-serif;
-        font-weight: 700;
-        font-size: 5rem;
-        z-index: 1;
-        width: 100%;
-        padding-top: 3rem;
-    
-        @media screen and (max-width: 576px) {
-            font-size: 10.5vw;
-            padding: 0 1.5rem;
-            padding-top: 4rem;
-        }
+        font-weight: 600;
+        font-size: 1.5rem;
+        width: fit-content;
+        margin-bottom: 2rem;
+        color: $blanco;
+        text-align: center;
 
-        @media screen and (max-width: 992px) and (orientation: landscape) {
-            font-size: 6.3vw;
+        @media screen and (max-width: 600px) {
+            width: 100%;
         }
-
     }
 }
 

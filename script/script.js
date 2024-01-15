@@ -1,4 +1,26 @@
+// SWIPER home 
+
+const swiper_home = new Swiper('.swiper_home', {
+  roundLengths: true,
+  loop: true,
+  spaceBetween:20,
+  mode: 'horizontal',
+  preventClicks: true,
+  centeredSlides: true,
+  autoplay: {
+    delay: 4500,
+  },
+
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    clickable: true
+  },
+ });
+
 // swiper
+
+
 
 const swiper = new Swiper('.swiper_inicio', {
   // Optional parameters

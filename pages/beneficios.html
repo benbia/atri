@@ -11,6 +11,11 @@
     <meta name="description" content="Ser socio de ATRI tiene sus beneficios!">
     <!-- tipografias -->
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- carousel -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"></noscript>
+
     <!-- css -->
     <link rel="stylesheet" href="../css/style.css">
     <!-- box icons -->
@@ -60,10 +65,34 @@
         </nav>
     </header>
     <section class="section1">
-        <div class="container parallax_beneficios">
+        
+        <div class="div_info">
             <h1 class="h1">Beneficios</h1>
+
+            <div class="swiper swiper_home">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+
+                    <!-- <div class="swiper-slide">
+                        <div class="importante">
+                            <p class="news_inicio">Importante</p>
+                        </div>
+                        <p class="p_home">Desde el 2 al 23 de enero del 2024, la biblioteca permanecerá cerrada.</p>
+                    </div> -->
+                    
+                    <div class="swiper-slide">
+                        <p class="p_home">Todos los beneficios y convenios de ser Socio ATRI.</p>
+                    </div>
+                    
+                </div>
+
+                <div class="swiper-pagination"></div>
+            </div>
         </div>
+        <div class="container parallax_beneficios"></div>   
     </section>
+
     <section class="section2 section_beneficios">
         <div class="div_sombras">
             <h2 class="h2">Beneficios para socios</h2>

@@ -23,6 +23,23 @@
   width: 75%;
 }
 
+.swiper_home {
+  height: auto;
+  display: flex;
+  align-items: center;
+  padding-bottom: 2.8rem;
+  width: 100% !important;
+  box-sizing: border-box;
+  --swiper-pagination-color: var(--ion-color-primary, #47a5ae);
+}
+.swiper_home .swiper-wrapper {
+  height: auto;
+}
+.swiper_home .swiper-wrapper .swiper-slide {
+  height: auto !important;
+  margin-bottom: 3.5rem !important;
+}
+
 .swiper_years {
   width: 100%;
   height: 110px !important;
@@ -206,30 +223,81 @@
     height: 50% !important;
   }
 }
-.section1 {
-  height: 60vh;
-  margin-bottom: 2rem;
+.link_home {
+  font-weight: 500;
+  text-decoration: none;
+  color: #656464;
 }
-.section1 .h1 {
-  text-align: center;
-  color: white;
+
+.h1 {
+  color: #f48424;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
-  font-size: 5rem;
+  font-size: 5.4rem;
   z-index: 1;
   width: 100%;
   padding-top: 3rem;
+  margin-bottom: 2rem;
 }
-@media screen and (max-width: 576px) {
-  .section1 .h1 {
-    font-size: 10.5vw;
-    padding: 0 1.5rem;
-    padding-top: 4rem;
+@media screen and (max-width: 600px) {
+  .h1 {
+    font-size: 9.5vw;
+    padding: 0;
+    padding-top: 0;
+    text-align: center;
+    margin-bottom: 3rem;
   }
 }
 @media screen and (max-width: 992px) and (orientation: landscape) {
-  .section1 .h1 {
+  .h1 {
     font-size: 6.3vw;
+  }
+}
+
+.h1_inicio {
+  font-size: 5rem;
+}
+
+.p_home {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 1.8rem;
+  color: #656464;
+  margin-bottom: 1rem;
+}
+.p_home strong {
+  font-weight: 500;
+}
+@media screen and (max-width: 900px) {
+  .p_home {
+    margin-bottom: 3rem;
+  }
+}
+
+.importante {
+  display: flex;
+  justify-content: flex-start;
+}
+@media screen and (max-width: 600px) {
+  .importante {
+    justify-content: center;
+  }
+}
+.importante .news_inicio {
+  background-color: #47a5ae;
+  border-radius: 25px;
+  padding: 1rem 2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  width: fit-content;
+  margin-bottom: 2rem;
+  color: #ffffff;
+  text-align: center;
+}
+@media screen and (max-width: 600px) {
+  .importante .news_inicio {
+    width: 100%;
   }
 }
 
@@ -659,81 +727,130 @@ nav {
     text-align: left !important;
   }
 }
+.section1 {
+  height: 65vh;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  margin-top: 70px;
+  width: 100vw;
+}
+@media screen and (max-width: 900px) {
+  .section1 {
+    flex-direction: column-reverse;
+    height: auto;
+    width: 100vw;
+  }
+}
+.section1 .div_info {
+  width: 60%;
+  padding-left: 3rem;
+  padding-right: 3rem !important;
+  background-color: rgba(244, 132, 36, 0.3);
+}
+@media screen and (max-width: 900px) {
+  .section1 .div_info {
+    width: 100%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    margin: 0;
+  }
+}
+.section1 .container {
+  height: 65vh;
+  width: 40%;
+  margin: 0;
+  display: table;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 900px) {
+  .section1 .container {
+    width: 100%;
+    height: 25vh;
+  }
+}
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  .section1 .container {
+    height: 45vh;
+  }
+}
+
+.height_75 {
+  height: 75vh !important;
+}
+@media screen and (max-width: 900px) {
+  .height_75 {
+    height: auto !important;
+  }
+}
+
+.height_75--container {
+  height: 75vh !important;
+}
+@media screen and (max-width: 900px) {
+  .height_75--container {
+    width: 100%;
+    height: 25vh !important;
+  }
+}
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  .height_75--container {
+    height: 45vh;
+  }
+}
+
 .parallax_inicio {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/index_parallax.webp");
-  height: 100%;
-  background-attachment: fixed;
-  background-position: center;
+  background-image: linear-gradient(rgba(71, 165, 174, 0.4), rgba(71, 165, 174, 0.4)), url("../img/index_parallax.webp");
+  background-size: 150%;
   background-repeat: no-repeat;
-  background-size: 100%;
   background-size: cover;
-  margin-bottom: 50px;
 }
 
 .parallax_beneficios {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/beneficios_parallax.webp");
-  height: 100%;
-  background-attachment: fixed;
-  background-position: center;
+  background-image: linear-gradient(rgba(71, 165, 174, 0.4), rgba(71, 165, 174, 0.4)), url("../img/beneficios_parallax.webp");
+  background-size: 150%;
   background-repeat: no-repeat;
-  background-size: 100%;
   background-size: cover;
-  margin-bottom: 50px;
 }
 
 .parallax_cuotas {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cuotas_parallax.webp");
-  height: 100%;
-  background-attachment: fixed;
-  background-position: center;
+  background-image: linear-gradient(rgba(71, 165, 174, 0.4), rgba(71, 165, 174, 0.4)), url("../img/cuotas_parallax.webp");
+  background-size: 150%;
   background-repeat: no-repeat;
-  background-size: 100%;
   background-size: cover;
-  margin-bottom: 50px;
 }
 
 .parallax_publicaciones {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/publicaciones_parallax.webp") !important;
-  height: 100%;
-  background-attachment: fixed;
-  background-position: center;
+  background-image: linear-gradient(rgba(71, 165, 174, 0.4), rgba(71, 165, 174, 0.4)), url("../img/publicaciones_parallax.webp");
+  background-size: 150%;
   background-repeat: no-repeat;
-  background-size: 100%;
   background-size: cover;
-  margin-bottom: 50px;
 }
 
 .parallax_eventos {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/eventos_parallax.webp");
-  height: 100%;
-  background-attachment: fixed;
-  background-position: center;
+  background-image: linear-gradient(rgba(71, 165, 174, 0.4), rgba(71, 165, 174, 0.4)), url("../img/eventos_parallax.webp");
+  background-size: 150%;
   background-repeat: no-repeat;
-  background-size: 100%;
   background-size: cover;
-  margin-bottom: 50px;
 }
 
 .parallax_estatutos {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/parallax_estatutos.webp");
-  height: 100%;
-  background-attachment: fixed;
-  background-position: center;
+  background-image: linear-gradient(rgba(71, 165, 174, 0.4), rgba(71, 165, 174, 0.4)), url("../img/parallax_estatutos.webp");
+  background-size: 150%;
   background-repeat: no-repeat;
-  background-size: 100%;
   background-size: cover;
-  margin-bottom: 50px;
 }
 
 .parallax_marco-juridico {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/parallax_marcojuridico.webp");
-  height: 100%;
-  background-attachment: fixed;
-  background-position: center;
+  background-image: linear-gradient(rgba(71, 165, 174, 0.4), rgba(71, 165, 174, 0.4)), url("../img/parallax_marcojuridico.webp");
+  background-size: 150%;
   background-repeat: no-repeat;
-  background-size: 100%;
   background-size: cover;
-  margin-bottom: 50px;
 }
 
 .container {
@@ -1224,6 +1341,14 @@ html {
   font-size: 62.5%;
   background-color: #ffffff;
   overflow-x: hidden;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 /*# sourceMappingURL=style.css.map */
