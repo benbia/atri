@@ -1,92 +1,79 @@
-.footer {
-    margin-top: 8rem;
+footer {
     background-color: $color-naranja;
-    padding: 4rem 3rem;
+    height: auto;
+    padding-top: 2rem 3rem;
 
-    .footer_datos {
+    .div_footer--datos {
         display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2rem 3rem;
 
-        .footer_info {
-            width: 50%;
-            .p_footer {
-                font-family: 'Poppins', sans-serif;
-                font-weight: 300;
-                font-size: 2rem;
-                color:white;
-            }
+        @media screen and (max-width: 600px) {
+            flex-direction: column-reverse;
+            align-items: flex-start;
+            padding-top: 2rem;
         }
-    }
-}
 
-.mail {
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-size: 2rem;
-    color:white;
-}
-
-
-
-.redes {
-    display: flex;
-    justify-content: flex-start;
-    gap: 15px;
-    margin-top: 4rem;
-    .link_redes {
-
-        .icono_redes {
-            font-size: 5rem;
-            color:white;
-        }
-    }
-
-}
-
-.footer_img {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding-left: 10%;
-    img {
-        width: 80%;
-        opacity: 0.9;
-    }
-}
-
-
-// media q
-
-@media screen and (max-width: 900px) {
-    .footer_img {
-        display: none;
-    }
-
-    .footer {
-        padding-bottom: 6rem;
-
-        .footer_datos {
-            flex-direction: column;
-            width: 100%;
-
-            .footer_info {
+        .div_contacto {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
                 width: 100%;
 
-                .p_footer {
-                    margin-bottom: 0.7rem;
-                    font-size: 1.7rem;
+                @media screen and (max-width: 600px) {
+                    padding-top: 2.5rem;
                 }
-
-            }
         }
 
-        .redes {
-            justify-content: center;
-
-            .icono_redes {
-                font-size: 4.5rem;
-            }
+        .p_footer {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 300;
+            font-size: 1.7rem;
+            color:$blanco;
+            margin-bottom: 0.5rem;
         }
 
+        .contacto_footer {
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            font-size: 1.7rem;
+            color:$blanco;
+            margin-bottom: 1rem;
+        }
     }
+
+    .div_redes {
+        display: flex;
+        justify-content: flex-start;
+        gap: 15px;
+        padding-top: 1rem;
+
+        .icono_redes {
+            font-size: 4rem;
+            color:white;
+        }
+
+        @media screen and (max-width: 600px) {
+            align-self: center;
+            align-items: center;
+            padding-top: 3rem;
+        }
+    }
+}
+
+.div_direccion {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    @media screen and (max-width: 600px) {
+        align-items: flex-start;
+    }
+}
+
+.no-margin-bottom {
+    margin-bottom: 0rem !important;
 }

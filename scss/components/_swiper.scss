@@ -2,12 +2,24 @@
     width: 100%;
     height: 250px;
     margin-top: 1.5rem;
+    margin-bottom: 3rem;
+
+    @media screen and (max-width: 600px) { 
+        margin-top: 2rem;
+        height: 70%;
+    }
 
     .swiper-wrapper {
+        margin-bottom: 1.5rem;
         height: 200px;
         transition-timing-function : linear;
         
+        @media screen and (max-width: 600px) { 
+            height: 50%;
+        }
+
         .swiper-slide {
+            height: auto;
             background: $blanco;
             border-radius: 50px;
             border-radius: 50px;
@@ -20,11 +32,14 @@
             align-items: center;
 
             img {
-                width: 75%;
+                max-width: 75%;
+                max-height: 95%;
+                
             }
         }
     }
 }
+
 
 .swiper_home {
     height: auto;
@@ -49,23 +64,25 @@
 
 .swiper_years {
     width: 100%;
-    height: 110px !important;
+    height: auto;
     margin-top: 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 2.8rem;
+    margin-bottom: 2.8rem;
+    box-sizing: border-box;
+    padding: 2rem !important;
 
     .swiper-wrapper {
-        height: 50px;
-        
+        height: auto;
+
         .swiper-slide {
-            background: $blanco;
-            border-radius: 50px;
+            height: auto;
             border-radius: 50px;
             background: $color-azul;
             box-shadow:  7px 7px 14px #d9d9d9,
                         -7px -7px 14px #ffffff;
+            box-sizing: border-box;
             padding: 1.5rem 0rem;
             display: flex;
             justify-content: center;
@@ -78,13 +95,8 @@
             transform: scale(1.2);
             opacity: 1;
             }
-            @media screen and (max-width: 576px) {
-               width: 80%;
-            }
-
         }
     }
-
 }
 
 .navigation_button {
@@ -93,11 +105,12 @@
 
 .years {
     font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-weight: bold;
-    font-size: 3rem;
+    font-weight: 600;
+    font-size: 2rem;
     color: white;
-    width: 33%;
+    text-align: center;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 
     @media screen and (max-width: 800px) {
         font-size: 2rem;
@@ -110,72 +123,32 @@
 // swiper proximos eventos
 
 .swiper_proximos, .swiper_2023, .swiper_2022 {
+    
     width: 100%;
-    height: 700px !important;
+    height: auto;
     margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-bottom: 2.8rem;
 
-    @media screen and (max-width: 600px) {
-        height: 118vh !important;
-    }
-
-    @media screen and (max-width: 412px) {
-        height: 130vh !important;
-    }
-
-    @media screen and (max-width: 380px) {
-        height: 109vh !important;
-    }
-
-    @media screen and (max-width: 370px) {
-        height: 105vh !important;
-    }
-
-    @media screen and (max-width: 360px) {
-        height: 110vh !important;
-    }
-
-    @media screen and (max-width: 320px) {
-        height: 200vh !important;
-    }
-    
-
-
     .swiper-wrapper {
-        height: 700px;
         
+        height: auto;
 
-        @media screen and (max-width: 600px) {
-            height: 205vh;
-        }
-
-        @media screen and (max-width: 412px) {
-            height: 215vh !important;
-        }
-
-        @media screen and (max-width: 380px) {
-            height: 190vh;
-        }
-
-        @media screen and (max-width: 370px) {
-            height: 180vh;
-        }
-
-        @media screen and (max-width: 360px) {
-            height: 190vh;
-        }
-
-        @media screen and (max-width: 320px) {
-            height: 350vh !important;
-        }
-        
         .swiper-slide {
+
+            height: auto;
             background: $blanco;
             border-radius: 50px;
             border-radius: 50px;
             transition:all 200ms linear;
             transform: scale(0.7);
             opacity: 0.5;
+            margin-bottom: 4rem;
+
+            box-shadow:  7px 7px 14px #d9d9d9,
+                        -7px -7px 14px #ffffff;
   
             &.swiper-slide-active{
             transform: scale(0.9);
@@ -187,49 +160,9 @@
 
         }
     }
-
 }
 
 .hidden {
-    display: none;
+    display: none !important;
 }
 
-@media screen and (max-width: 800px) {
-    .swiper_years {
-        height: 70%;
-
-        .swiper-wrapper {
-            height: 50%;
-        }
-        .swiper-slide {
-            height: 50% !important;
-        }
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .swiper_inicio {
-        margin-top: 2rem;
-        height: 70%;
-
-        .swiper-wrapper {
-            height: 50%;
-        }
-        .swiper-slide {
-            height: 50% !important;
-            margin: 7px;
-        }
-    }
-
-    .swiper_years {
-        height: 70%;
-
-        .swiper-wrapper {
-            height: 50%;
-        }
-        .swiper-slide {
-            height: 50% !important;
-        }
-    }
-    
-}
