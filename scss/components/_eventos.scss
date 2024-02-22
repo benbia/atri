@@ -298,3 +298,12 @@
 
     @include foto_evento;
 }
+
+.foto_evento_tcerebro_2024 {
+    background-image: linear-gradient(
+        rgba($color-azul, 0.35),
+        rgba($color-azul, 0.35)
+    ),url("../img/foto_evento_tcerebro_2024.jpg");
+
+    @include foto_evento;
+}

@@ -112,7 +112,7 @@
   }
 }
 
-.swiper_proximos, .swiper_2023, .swiper_2022 {
+.swiper_eventos {
   width: 100%;
   height: auto;
   margin-top: 1.5rem;
@@ -120,11 +120,12 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 2.8rem;
+  margin-bottom: 4rem;
 }
-.swiper_proximos .swiper-wrapper, .swiper_2023 .swiper-wrapper, .swiper_2022 .swiper-wrapper {
+.swiper_eventos .swiper-wrapper {
   height: auto;
 }
-.swiper_proximos .swiper-wrapper .swiper-slide, .swiper_2023 .swiper-wrapper .swiper-slide, .swiper_2022 .swiper-wrapper .swiper-slide {
+.swiper_eventos .swiper-wrapper .swiper-slide {
   height: auto;
   background: #ffffff;
   border-radius: 50px;
@@ -135,12 +136,12 @@
   margin-bottom: 4rem;
   box-shadow: 7px 7px 14px #d9d9d9, -7px -7px 14px #ffffff;
 }
-.swiper_proximos .swiper-wrapper .swiper-slide.swiper-slide-active, .swiper_2023 .swiper-wrapper .swiper-slide.swiper-slide-active, .swiper_2022 .swiper-wrapper .swiper-slide.swiper-slide-active {
+.swiper_eventos .swiper-wrapper .swiper-slide.swiper-slide-active {
   transform: scale(0.9);
   opacity: 1;
 }
 @media screen and (max-width: 576px) {
-  .swiper_proximos .swiper-wrapper .swiper-slide, .swiper_2023 .swiper-wrapper .swiper-slide, .swiper_2022 .swiper-wrapper .swiper-slide {
+  .swiper_eventos .swiper-wrapper .swiper-slide {
     width: 80%;
   }
 }
@@ -1273,6 +1274,21 @@ footer .div_redes .icono_redes {
 }
 @media screen and (max-width: 600px) {
   .foto_evento_cr_2025 {
+    height: 200px;
+  }
+}
+
+.foto_evento_tcerebro_2024 {
+  background-image: linear-gradient(rgba(71, 165, 174, 0.35), rgba(71, 165, 174, 0.35)), url("../img/foto_evento_tcerebro_2024.jpg");
+  width: 100%;
+  height: 40%;
+  background-size: 100%;
+  background-size: cover;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+@media screen and (max-width: 600px) {
+  .foto_evento_tcerebro_2024 {
     height: 200px;
   }
 }
