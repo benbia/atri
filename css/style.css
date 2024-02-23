@@ -134,7 +134,7 @@
   transform: scale(0.7);
   opacity: 0.5;
   margin-bottom: 4rem;
-  box-shadow: 7px 7px 14px #d9d9d9, -7px -7px 14px #ffffff;
+  box-shadow: 7px 7px 14px #bbc6c7, -7px -7px 14px #ffffff;
 }
 .swiper_eventos .swiper-wrapper .swiper-slide.swiper-slide-active {
   transform: scale(0.9);
@@ -148,6 +148,153 @@
 
 .hidden {
   display: none !important;
+}
+
+.swiper_evento-individual-indicadores {
+  width: 100%;
+  height: auto;
+  padding: 2rem !important;
+}
+.swiper_evento-individual-indicadores .swiper-wrapper {
+  height: auto;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.swiper_evento-individual-indicadores .swiper-wrapper .swiper-slide {
+  height: auto;
+  border-radius: 50px;
+  background: #47a5ae;
+  box-shadow: 5px 5px 10px #bbc6c7, -5px -5px 10px #ffffff;
+  box-sizing: border-box;
+  padding: 1.5rem 0rem;
+  transition: all 200ms linear;
+  transform: scale(0.8);
+  opacity: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper_evento-individual-indicadores .swiper-wrapper .swiper-slide.swiper-slide-active {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+.indicador-mobile {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+@media screen and (max-width: 900px) {
+  .indicador-mobile {
+    font-size: 1.35rem;
+  }
+}
+
+.swiper_apoyan-auspician {
+  width: 100%;
+  height: 250px;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+}
+@media screen and (max-width: 600px) {
+  .swiper_apoyan-auspician {
+    margin-top: 2rem;
+    height: 70%;
+  }
+}
+.swiper_apoyan-auspician .swiper-wrapper {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  height: 200px;
+  transition-timing-function: linear;
+}
+@media screen and (max-width: 600px) {
+  .swiper_apoyan-auspician .swiper-wrapper {
+    height: 50%;
+  }
+}
+.swiper_apoyan-auspician .swiper-wrapper .swiper-slide {
+  height: auto;
+  background: #ffffff;
+  border-radius: 50px;
+  border-radius: 50px;
+  background: rgba(71, 165, 174, 0.15);
+  box-shadow: 5px 5px 10px #bbc6c7, -5px -5px 10px #ffffff;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper_apoyan-auspician .swiper-wrapper .swiper-slide img {
+  max-width: 75%;
+  max-height: 95%;
+}
+
+.swiper_personas {
+  width: 90%;
+  height: auto;
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2.8rem;
+}
+@media screen and (max-width: 900px) {
+  .swiper_personas {
+    width: 100%;
+  }
+}
+.swiper_personas .swiper-wrapper {
+  height: auto;
+}
+.swiper_personas .swiper-wrapper .swiper-slide {
+  height: auto;
+  background: rgba(71, 165, 174, 0.15);
+  border-radius: 50px;
+  border-radius: 50px;
+  transition: all 200ms linear;
+  transform: scale(0.7);
+  opacity: 0.5;
+  margin-bottom: 4rem;
+  box-shadow: 5px 5px 10px #bbc6c7, -5px -5px 10px #ffffff;
+}
+.swiper_personas .swiper-wrapper .swiper-slide.swiper-slide-active {
+  transform: scale(0.9);
+  opacity: 1;
+}
+@media screen and (max-width: 576px) {
+  .swiper_personas .swiper-wrapper .swiper-slide {
+    width: 80%;
+  }
+}
+.swiper_personas .swiper-wrapper .swiper-slide .link_ul {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #000000;
+}
+.swiper_personas .swiper-wrapper .swiper-slide .icono {
+  font-size: 4rem;
+  color: #47a5ae;
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.swiper_personas .swiper-wrapper .swiper-slide .icono i {
+  padding: 1.5rem;
+  border-radius: 50%;
+  border-radius: 50%;
+  background: rgba(71, 165, 174, 0.15);
+  box-shadow: inset 5px 5px 7px #bbc6c7, inset -5px -5px 7px #ffffff;
+  align-self: center;
+  color: #47a5ae;
+  margin-bottom: 1.7rem;
 }
 
 .link_home {
@@ -1458,6 +1605,140 @@ footer .div_redes .icono_redes {
   }
 }
 
+.section2-eventoIndividual {
+  padding-top: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 3rem;
+  background-color: rgba(71, 165, 174, 0.15);
+}
+
+.section3-eventoIndividual {
+  padding-top: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 3rem;
+  background-color: rgba(71, 165, 174, 0.15);
+}
+
+.section4-eventoIndividual {
+  padding-top: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 3rem;
+  background-color: rgba(71, 165, 174, 0.15);
+}
+
+table {
+  width: 60%;
+  margin-top: 1rem;
+}
+@media screen and (max-width: 900px) {
+  table {
+    width: 100%;
+  }
+}
+
+table, th, td {
+  border: 2px solid #47a5ae;
+  border-collapse: collapse;
+  padding: 1rem;
+  text-align: center;
+  padding-left: 1rem;
+}
+
+th {
+  background-color: rgba(202, 229, 231, 0.95);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.7rem;
+  color: #47a5ae;
+}
+
+td {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 1.6rem;
+  color: #0d4f55;
+  text-align: center;
+}
+
+.horarios {
+  font-weight: 450;
+  font-size: 1.2rem;
+}
+
+.h2-eventoIndividual {
+  color: #0d4f55;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 4rem;
+  margin-bottom: 2.5rem;
+}
+@media screen and (max-width: 900px) {
+  .h2-eventoIndividual {
+    font-size: 3.5rem;
+  }
+}
+
+.h4-eventoIndividual {
+  color: #0d4f55;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  text-align: center;
+}
+@media screen and (max-width: 900px) {
+  .h4-eventoIndividual {
+    font-size: 1.7rem;
+  }
+}
+
+.p_normal-evento {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 1.7rem;
+  color: #0d4f55;
+  padding-left: 3rem;
+}
+.p_normal-evento strong {
+  font-weight: 450 !important;
+}
+
+.datos-expositores {
+  padding: 3rem;
+  padding-top: 2rem;
+}
+
+.h3-eventoIndividual {
+  color: #47a5ae;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 3rem;
+  margin-bottom: 2.5rem;
+}
+@media screen and (max-width: 900px) {
+  .h3-eventoIndividual {
+    font-size: 3.5rem;
+  }
+}
+
+.programa {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+.programa table {
+  align-self: center;
+}
+
+.expositores {
+  margin-top: 2rem;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -1469,6 +1750,7 @@ html {
   font-size: 62.5%;
   background-color: #ffffff;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 html {

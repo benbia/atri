@@ -204,6 +204,110 @@ var swiper_eventos = new Swiper(".swiper_eventos", {
   }
 });
 
+// s_evento-individual
+
+var swiperEventoIndividual = new Swiper(".swiper_evento-individual-indicadores", {
+  initialSlide: 0,
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+
+  a11y: {
+    prevSlideMessage: 'Previous slide',
+    nextSlideMessage: 'Next slide',
+  },
+
+  slidesPerView: 3,
+  centeredSlides: true,
+  roundLengths: true,
+  loop: false,
+  loopAdditionalSlides: 30,
+  spaceBetween:20,
+  mode: 'horizontal',
+  slideToClickedSlide: true,
+
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 2,
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    },
+  }
+  
+
+});
+
+const swiperAsupiciantesApoyan = new Swiper('.swiper_apoyan-auspician', {
+  // Optional parameters
+  allowTouchMove: false,
+  loop: true,
+  speed: 7000,
+  autoplay: {
+      delay: 1,
+      disableOnInteraction: false,
+  },
+  speed: 7000,
+            //add
+  slidesPerView: 3,     //add
+
+  breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      // when window width is >= 480px
+      480: {
+        slidesPerView: 3,
+        spaceBetween: 30
+      },
+    }
+});
+
+const swiperPersonas = new Swiper('.swiper_personas', {
+  roundLengths: true,
+  loop: true,
+  spaceBetween:20,
+  mode: 'horizontal',
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    clickable: true
+  },
+  slideToClickedSlide: true,
+  preventClicks: true,
+  centeredSlides: true,
+
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: true,
+  },
+
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 30
+    },
+
+    1000: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    },
+  }
+});
+
 
 // hamburguer menu
 

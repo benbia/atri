@@ -191,3 +191,141 @@
     
 
 }
+
+.section2-eventoIndividual {
+    padding-top: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 3rem;
+    background-color: rgba($color: $color-azul, $alpha: 0.15);
+
+}
+
+.section3-eventoIndividual {
+    padding-top: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 3rem;
+    background-color: rgba($color: $color-azul, $alpha: 0.15);
+
+}
+
+.section4-eventoIndividual {
+    padding-top: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 3rem;
+    background-color: rgba($color: $color-azul, $alpha: 0.15);
+
+}
+
+table {
+    width: 60%;
+    margin-top: 1rem;
+
+    @media screen and (max-width: 900px) {
+        width: 100%;
+         
+    }
+}
+
+table, th, td {
+    border: 2px solid $color-azul;
+    border-collapse: collapse;
+    padding: 1rem;
+    text-align: center;
+    padding-left: 1rem;
+  }
+
+  th {
+    background-color: rgba($color: #cae5e7 , $alpha: 0.95);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.7rem;
+    color: $color-azul;
+  }
+
+  td {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1.6rem;
+    color: $color-azul-oscuro;
+    text-align: center;
+    
+  }
+
+  .horarios {
+    font-weight: 450;
+    font-size: 1.2rem;
+  }
+
+.h2-eventoIndividual {
+    color: $color-azul-oscuro;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 4rem;
+    margin-bottom: 2.5rem;
+
+    @media screen and (max-width: 900px) {
+        font-size: 3.5rem;
+    }
+}
+
+.h4-eventoIndividual {
+    color: $color-azul-oscuro;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    text-align: center;
+
+    @media screen and (max-width: 900px) {
+        font-size: 1.7rem;
+    }
+}
+
+.p_normal-evento {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1.7rem;
+    color: $color-azul-oscuro;
+    padding-left: 3rem;
+
+    strong {
+        font-weight: 450 !important;
+    }
+}
+
+.datos-expositores {
+    padding: 3rem;
+    padding-top: 2rem;
+}
+
+.h3-eventoIndividual {
+    color: $color-azul;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 3rem;
+    margin-bottom: 2.5rem;
+
+    @media screen and (max-width: 900px) {
+        font-size: 3.5rem;
+    }
+}
+
+.programa {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    table {
+       align-self: center;
+    }
+}
+
+.expositores {
+    margin-top: 2rem;
+}
+
+
