@@ -286,6 +286,9 @@
   justify-content: center;
   margin-top: 3rem;
 }
+.swiper_personas .swiper-wrapper .swiper-slide .icono img {
+  border-radius: 100%;
+}
 .swiper_personas .swiper-wrapper .swiper-slide .icono i {
   padding: 1.5rem;
   border-radius: 50%;
@@ -1629,6 +1632,22 @@ footer .div_redes .icono_redes {
   background-color: rgba(71, 165, 174, 0.15);
 }
 
+.section5-eventoIndividual {
+  padding-top: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 3rem;
+  background-color: rgba(71, 165, 174, 0.15);
+}
+
+.section6-eventoIndividual {
+  padding-top: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 6rem;
+  background-color: rgba(71, 165, 174, 0.15);
+}
+
 table {
   width: 60%;
   margin-top: 1rem;
@@ -1702,7 +1721,6 @@ td {
   font-weight: 300;
   font-size: 1.7rem;
   color: #0d4f55;
-  padding-left: 3rem;
 }
 .p_normal-evento strong {
   font-weight: 450 !important;
@@ -1737,6 +1755,69 @@ td {
 
 .expositores {
   margin-top: 2rem;
+}
+
+.presentacion {
+  margin-top: 3rem;
+}
+
+.link-evento {
+  text-decoration: none;
+  color: #0d4f55;
+  font-family: "Poppins", sans-serif;
+  font-weight: 450;
+  font-size: 2rem;
+  padding-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.link-evento .arrow-right {
+  font-size: 2rem;
+  color: #0d4f55;
+}
+
+.ul-eventoIndividual {
+  padding-left: 3rem;
+  color: #0d4f55;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 2rem;
+  margin-top: -1.5rem;
+}
+.ul-eventoIndividual .link-locomocionALojamiento {
+  text-decoration: none;
+  color: #0d4f55;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.locomocionYAlojamiento {
+  display: flex;
+  gap: 4rem;
+}
+@media screen and (max-width: 900px) {
+  .locomocionYAlojamiento {
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+.locomocionYAlojamiento iframe {
+  border-radius: 50px;
+  border: 6px solid #47a5ae;
+}
+@media screen and (max-width: 900px) {
+  .locomocionYAlojamiento iframe {
+    width: 100%;
+  }
+}
+
+.footer-eventoIndividual {
+  background-color: #47a5ae;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 * {

@@ -314,6 +314,10 @@
                     display: flex;
                     justify-content: center;
                     margin-top: 3rem;
+
+                    img {
+                        border-radius: 100%;
+                    }
                 
                     i {
                         padding: 1.5rem;
