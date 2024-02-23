@@ -1,0 +1,193 @@
+.nav-eventoInd {
+    background-color: #cae5e7;
+    box-shadow: 0 4px 10px rgba($color: #062427, $alpha: 0.1);
+
+    .navbar {
+        .navbar_links {
+            
+            @media screen and (max-width: 1280px) {
+                background-color: #cae5e7;
+            }
+            .links {
+    
+                .link_nav {
+                    color: $color-azul;
+                    .arrow {
+                        color: $color-azul;
+                    }
+                }
+            }
+        }
+    }
+
+    .evento-registrate {
+        font-weight: 550 !important;
+    }
+
+// dropdown
+.link_nav .submenu {
+    
+    background: rgba($color: #cae5e7 , $alpha: 0.95);
+    box-shadow: 0 1px 2px rgba($color: $color-azul, $alpha: 0.1);
+
+    @media screen and (max-width: 1280px) {
+        background-color: transparent;
+    }
+
+    li {
+        border-bottom: 1px solid rgba($color: $color-azul, $alpha: 0.1);
+    }
+}
+
+
+.link_nav--drop {
+    color: rgba($color: $color-azul, $alpha: 0.9);
+}
+.cerrar {
+    color: $color-azul;
+}
+
+.menu_icon {
+    color: $color-azul
+}
+}
+
+
+///// evento!
+
+.section1-eventoIndividual {
+    padding-top: 90px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 3rem;
+    background-color: rgba($color: $color-azul, $alpha: 0.15);
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @media screen and (max-width: 900px) {
+        flex-direction: column-reverse;
+    }
+
+    .eventoIndividual-info {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding-right: 3.5rem;
+
+        @media screen and (max-width: 900px) {
+            padding: 0;
+            gap: 2rem;
+        }
+
+        .first-part {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+
+            .fecha-evnt {
+                background-color: $color-naranja;
+                border-radius: 25px;
+                padding: 1rem 2rem;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                font-size: 1.5rem;
+                color: white;
+                margin-left: 1rem;
+                text-align: center;
+            }
+            
+            img {
+                height: 80px !important;
+            }
+        }
+
+        .event-title {
+            color: $color-azul;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 5.4rem;
+
+            @media screen and (max-width: 900px) {
+                font-size: 4.3rem;
+            }
+        }
+
+        .costos-evento {
+            padding-top: 2rem;
+            @media screen and (max-width: 900px) {
+                padding: 0;
+            }
+            .costos-title {
+                color: $color-azul-oscuro;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                font-size: 4rem;
+                margin-bottom: 1rem;
+
+                @media screen and (max-width: 900px) {
+                    font-size: 3.5rem;
+                }
+            }
+
+            .costos-listas {
+                display: flex;
+                justify-content: space-between;
+
+                @media screen and (max-width: 900px) {
+                    flex-direction: column;
+                    gap: 2rem;
+                }
+
+                .ul-costos-evento {
+                    color: $color-azul-oscuro;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 500;
+                    font-size: 1.8rem;
+                    padding-left: 3rem;
+                    padding-top: 0.5rem;
+
+                    .ul-interna {
+                        color: $color-azul-oscuro;
+                        font-family: 'Poppins', sans-serif;
+                        font-weight: 320;
+                        font-size: 1.8rem;
+                        
+                        padding-top: 0.5rem;
+                    }
+                }
+            }
+        }
+
+        .boton-inscripcion-evnt {
+            text-decoration: none;
+
+            background-color: $color-naranja;
+            border-radius: 25px;
+            padding: 1rem 2rem;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 2rem;
+            color: white;
+            text-align: center;
+            margin-top: 3rem;
+
+        }
+
+    }
+
+    .eventoIndividual-banner {
+        img {
+            height: 85vh;
+            border-radius: 30px;
+            border: 3px solid $color-azul;
+
+            @media screen and (max-width: 900px) {
+                display: none;
+            }
+        }
+    }
+    
+
+}
