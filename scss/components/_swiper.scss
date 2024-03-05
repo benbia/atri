@@ -75,13 +75,14 @@
 
     .swiper-wrapper {
         height: auto;
+        margin-bottom: 2rem;
 
         .swiper-slide {
             height: auto;
             border-radius: 50px;
             background: $color-azul;
-            box-shadow:  7px 7px 14px #d9d9d9,
-                        -7px -7px 14px #ffffff;
+            box-shadow:  5px 5px 10px #d1d1d1,
+                        -5px -5px 10px #ffffff;
             box-sizing: border-box;
             padding: 1.5rem 0rem;
             display: flex;
@@ -253,7 +254,7 @@
 
             img {
                 max-width: 75%;
-                max-height: 95%;
+                max-height: 75% !important;
                 
             }
         }

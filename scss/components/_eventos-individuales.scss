@@ -372,14 +372,26 @@ table, th, td {
     font-family: 'Poppins', sans-serif;
     padding-bottom: 2rem;
     margin-top: -1.5rem;
+    font-size: 2rem;
+    font-weight: 270;
 
     .link-locomocionALojamiento {
         text-decoration: none;
         color: $color-azul-oscuro;
         font-family: 'Poppins', sans-serif;
-        font-weight: 400;
+        font-weight: 420;
         font-size: 2rem;
     }
+}
+
+.ol-eventoIndividual {
+    padding-left: 3rem;
+    color: $color-azul-oscuro;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 2rem;
+    font-weight: 300;
+    font-size: 1.7rem;
+    margin-top: 1rem;
 }
 
 .locomocionYAlojamiento {
@@ -401,6 +413,42 @@ table, th, td {
     }
 }
 
+.subir {
+    border-radius: 40px;
+    background-color: $color-azul;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    z-index: 10000;
+    padding: 1rem 2rem;
+
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 420;
+    font-size: 3rem;
+
+    a {
+        text-decoration: none;
+    
+    }
+}
+
+.ul-inside {
+    padding-left: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+ul {
+    strong {
+        font-weight: 400;
+    }
+}
+
 
 // footer
 
@@ -411,5 +459,9 @@ table, th, td {
     justify-content: center;
     align-items: center;
     padding-top: 2rem;
+
+    @media screen and (max-width: 600px) {
+        padding-top: 2rem;
+    }
 }
 

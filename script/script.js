@@ -273,7 +273,7 @@ const swiperAsupiciantesApoyan = new Swiper('.swiper_apoyan-auspician', {
 
 const swiperPersonas = new Swiper('.swiper_personas', {
   roundLengths: true,
-  loop: true,
+  loop: false,
   spaceBetween:20,
   mode: 'horizontal',
   pagination: {
@@ -284,11 +284,6 @@ const swiperPersonas = new Swiper('.swiper_personas', {
   slideToClickedSlide: true,
   preventClicks: true,
   centeredSlides: true,
-
-  autoplay: {
-    delay: 2000,
-    disableOnInteraction: true,
-  },
 
   breakpoints: {
     // when window width is >= 320px

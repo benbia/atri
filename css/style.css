@@ -68,12 +68,13 @@
 }
 .swiper_years .swiper-wrapper {
   height: auto;
+  margin-bottom: 2rem;
 }
 .swiper_years .swiper-wrapper .swiper-slide {
   height: auto;
   border-radius: 50px;
   background: #47a5ae;
-  box-shadow: 7px 7px 14px #d9d9d9, -7px -7px 14px #ffffff;
+  box-shadow: 5px 5px 10px #d1d1d1, -5px -5px 10px #ffffff;
   box-sizing: border-box;
   padding: 1.5rem 0rem;
   display: flex;
@@ -232,7 +233,7 @@
 }
 .swiper_apoyan-auspician .swiper-wrapper .swiper-slide img {
   max-width: 75%;
-  max-height: 95%;
+  max-height: 75% !important;
 }
 
 .swiper_personas {
@@ -1065,6 +1066,7 @@ footer .div_redes .icono_redes {
 }
 .evento .informacion {
   padding: 3rem;
+  padding-bottom: 3rem !important;
 }
 .evento .informacion .titulo {
   display: flex;
@@ -1443,6 +1445,66 @@ footer .div_redes .icono_redes {
   }
 }
 
+.foto_evento_protocolo_2024 {
+  background-image: linear-gradient(rgba(71, 165, 174, 0.35), rgba(71, 165, 174, 0.35)), url("../img/foto_evento_protocolo_2024.jpg");
+  width: 100%;
+  height: 40%;
+  background-size: 100%;
+  background-size: cover;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+@media screen and (max-width: 600px) {
+  .foto_evento_protocolo_2024 {
+    height: 200px;
+  }
+}
+
+.foto_evento_melo_2024 {
+  background-image: linear-gradient(rgba(71, 165, 174, 0.35), rgba(71, 165, 174, 0.35)), url("../img/foto_evento_melo_2024.jpg");
+  width: 100%;
+  height: 40%;
+  background-size: 100%;
+  background-size: cover;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+@media screen and (max-width: 600px) {
+  .foto_evento_melo_2024 {
+    height: 200px;
+  }
+}
+
+.foto_evento_encuentro_2024 {
+  background-image: linear-gradient(rgba(71, 165, 174, 0.35), rgba(71, 165, 174, 0.35)), url("../img/foto_evento_encuentro_2024.JPG");
+  width: 100%;
+  height: 40%;
+  background-size: 100%;
+  background-size: cover;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+@media screen and (max-width: 600px) {
+  .foto_evento_encuentro_2024 {
+    height: 200px;
+  }
+}
+
+.foto_evento_mujeres_2024 {
+  background-image: linear-gradient(rgba(71, 165, 174, 0.35), rgba(71, 165, 174, 0.35)), url("../img/foto_evento_mujeres_2024.jpg");
+  width: 100%;
+  height: 40%;
+  background-size: 100%;
+  background-size: cover;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+@media screen and (max-width: 600px) {
+  .foto_evento_mujeres_2024 {
+    height: 200px;
+  }
+}
+
 .nav-eventoInd {
   background-color: #cae5e7;
   box-shadow: 0 4px 10px rgba(6, 36, 39, 0.1);
@@ -1783,13 +1845,25 @@ td {
   font-family: "Poppins", sans-serif;
   padding-bottom: 2rem;
   margin-top: -1.5rem;
+  font-size: 2rem;
+  font-weight: 270;
 }
 .ul-eventoIndividual .link-locomocionALojamiento {
   text-decoration: none;
   color: #0d4f55;
   font-family: "Poppins", sans-serif;
-  font-weight: 400;
+  font-weight: 420;
   font-size: 2rem;
+}
+
+.ol-eventoIndividual {
+  padding-left: 3rem;
+  color: #0d4f55;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 2rem;
+  font-weight: 300;
+  font-size: 1.7rem;
+  margin-top: 1rem;
 }
 
 .locomocionYAlojamiento {
@@ -1812,6 +1886,36 @@ td {
   }
 }
 
+.subir {
+  border-radius: 40px;
+  background-color: #47a5ae;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  z-index: 10000;
+  padding: 1rem 2rem;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 420;
+  font-size: 3rem;
+}
+.subir a {
+  text-decoration: none;
+}
+
+.ul-inside {
+  padding-left: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+ul strong {
+  font-weight: 400;
+}
+
 .footer-eventoIndividual {
   background-color: #47a5ae;
   padding-bottom: 2rem;
@@ -1819,6 +1923,11 @@ td {
   justify-content: center;
   align-items: center;
   padding-top: 2rem;
+}
+@media screen and (max-width: 600px) {
+  .footer-eventoIndividual {
+    padding-top: 2rem;
+  }
 }
 
 * {

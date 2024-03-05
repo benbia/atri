@@ -32,6 +32,7 @@
 
     .informacion {
         padding: 3rem;
+        padding-bottom: 3rem !important;
         .titulo {
             display: flex;
             justify-content: space-between;
@@ -304,6 +305,42 @@
         rgba($color-azul, 0.35),
         rgba($color-azul, 0.35)
     ),url("../img/foto_evento_tcerebro_2024.jpg");
+
+    @include foto_evento;
+}
+
+.foto_evento_protocolo_2024 {
+    background-image: linear-gradient(
+        rgba($color-azul, 0.35),
+        rgba($color-azul, 0.35)
+    ),url("../img/foto_evento_protocolo_2024.jpg");
+
+    @include foto_evento;
+}
+
+.foto_evento_melo_2024 {
+    background-image: linear-gradient(
+        rgba($color-azul, 0.35),
+        rgba($color-azul, 0.35)
+    ),url("../img/foto_evento_melo_2024.jpg");
+
+    @include foto_evento;
+}
+
+.foto_evento_encuentro_2024 {
+    background-image: linear-gradient(
+        rgba($color-azul, 0.35),
+        rgba($color-azul, 0.35)
+    ),url("../img/foto_evento_encuentro_2024.JPG");
+
+    @include foto_evento;
+}
+
+.foto_evento_mujeres_2024 {
+    background-image: linear-gradient(
+        rgba($color-azul, 0.35),
+        rgba($color-azul, 0.35)
+    ),url("../img/foto_evento_mujeres_2024.jpg");
 
     @include foto_evento;
 }
