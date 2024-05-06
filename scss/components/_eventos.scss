@@ -8,6 +8,7 @@
     border-radius: 50px;
     background: #ffffff;
     height: 700px;
+    box-sizing: border-box !important;
 
     @media screen and (max-width: 600px) {
         height: 57%;
@@ -31,8 +32,8 @@
     }
 
     .informacion {
-        padding: 3rem;
-        padding-bottom: 3rem !important;
+        padding: 3rem !important;
+        box-sizing: border-box;
         .titulo {
             display: flex;
             justify-content: space-between;
@@ -78,7 +79,6 @@
             font-size: 1.7rem;
             color:black;
             margin: 1rem;
-            margin-bottom: 20px;
             padding-left: 2.3rem;
             overflow-x: hidden;
             word-wrap: break-word;
@@ -341,6 +341,132 @@
         rgba($color-azul, 0.35),
         rgba($color-azul, 0.35)
     ),url("../img/foto_evento_mujeres_2024.jpg");
+
+    @include foto_evento;
+}
+
+.foto_evento_actualizacion_2024 {
+    background-image: linear-gradient(
+        rgba($color-azul, 0.35),
+        rgba($color-azul, 0.35)
+    ),url("../img/foto_evento_actualizacion_2024.png");
+
+    @include foto_evento;
+}
+
+.foto_evento_sorteo100_2024 {
+    background-image: linear-gradient(
+        rgba($color-azul, 0.35),
+        rgba($color-azul, 0.35)
+    ),url("../img/foto_evento_sorteo100_2024.JPG");
+
+    @include foto_evento;
+}
+
+.foto_evento_sorteo50_2024 {
+    background-image: linear-gradient(
+        rgba($color-azul, 0.35),
+        rgba($color-azul, 0.35)
+    ),url("../img/foto_evento_sorteo50_2024.JPG");
+
+    @include foto_evento;
+}
+
+.foto_evento_beca_2024 {
+    background-image: linear-gradient(
+        rgba($color-azul, 0.35),
+        rgba($color-azul, 0.35)
+    ),url("../img/foto_evento_beca_2024.jpeg");
+
+    @include foto_evento;
+}
+
+.foto_evento_maciel_2024 {
+    background-image: linear-gradient(
+        rgba($color-azul, 0.35),
+        rgba($color-azul, 0.35)
+    ),url("../img/foto_evento_maciel_2024.jpeg");
+
+    @include foto_evento;
+}
+
+.foto_evento_cordoba_2024 {
+    background-image: linear-gradient(
+        rgba($color-azul, 0.35),
+        rgba($color-azul, 0.35)
+    ),url("../img/foto_evento_cordoba_2024.jpg");
+
+    @include foto_evento;
+}
+
+.foto_evento_solaci_2024 {
+    background-image: linear-gradient(
+        rgba($color-azul, 0.35),
+        rgba($color-azul, 0.35)
+    ),url("../img/foto_evento_solaci_2024.jpg");
+
+    @include foto_evento;
+}
+
+.foto_evento_reunion_2024 {
+    background-image: linear-gradient(
+        rgba($color-azul, 0.35),
+        rgba($color-azul, 0.35)
+    ),url("../img/foto_evento_reunion_2024.jpg");
+
+    @include foto_evento;
+}
+
+.foto_evento_discusiones_2024 {
+    background-image: linear-gradient(
+        rgba($color-azul, 0.35),
+        rgba($color-azul, 0.35)
+    ),url("../img/foto_evento_discusiones_2024.jpg");
+
+    @include foto_evento;
+}
+
+.foto_evento_proteccion_2024 {
+    background-image: linear-gradient(
+        rgba($color-azul, 0.35),
+        rgba($color-azul, 0.35)
+    ),url("../img/foto_evento_proteccion_2024.jpg");
+
+    @include foto_evento;
+}
+
+.foto_evento_hp_2024 {
+    background-image: linear-gradient(
+        rgba($color-azul, 0.35),
+        rgba($color-azul, 0.35)
+    ),url("../img/evento-hp.JPG");
+
+    @include foto_evento;
+}
+
+.foto_evento_diplomaturaRM_2024 {
+    background-image: linear-gradient(
+        rgba($color-azul, 0.35),
+        rgba($color-azul, 0.35)
+    ),url("../img/foto_evento_diplomaturaRM_2024.jpg");
+
+    @include foto_evento;
+}
+
+.foto_evento_diplomaturaTC_2024 {
+    background-image: linear-gradient(
+        rgba($color-azul, 0.35),
+        rgba($color-azul, 0.35)
+    ),url("../img/foto_evento_diplomaturaTC_2024.jpg");
+
+    @include foto_evento;
+}
+
+.foto_evento_capacitacion_2024 {
+    background-image: linear-gradient(
+        rgba($color-azul, 0.35),
+        rgba($color-azul, 0.35)
+    ),url("../img/evento-capactitacion.jpg");
 
     @include foto_evento;
 }

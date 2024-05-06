@@ -244,18 +244,21 @@ var swiperEventoIndividual = new Swiper(".swiper_evento-individual-indicadores",
 
 });
 
-const swiperAsupiciantesApoyan = new Swiper('.swiper_apoyan-auspician', {
+const swiperApoyanAuspician = new Swiper('.swiper_apoyan-auspician', {
   // Optional parameters
   allowTouchMove: false,
   loop: true,
-  speed: 7000,
+  centerInsufficientSlides:true,
+  simulateTouch:false,
   autoplay: {
-      delay: 1,
-      disableOnInteraction: false,
+    enabled: true,
+    delay: 1,          
+    pauseOnMouseEnter: true,
+    disableOnInteraction: false,
   },
   speed: 7000,
-            //add
-  slidesPerView: 3,     //add
+            // minimo 6 slides!!!
+  slidesPerView: 3,     // numero de slides debe ser mayor o igual que slidesPerView * 2 para que funcione el loop !!!
 
   breakpoints: {
       // when window width is >= 320px

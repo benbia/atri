@@ -178,8 +178,11 @@
     }
 
     .eventoIndividual-banner {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
         img {
-            height: 85vh;
+            height: 83vh;
             border-radius: 30px;
             border: 3px solid $color-azul;
 
@@ -187,9 +190,126 @@
                 display: none;
             }
         }
+
+        .img-melo {
+            height: 55vh;
+            border-radius: 30px;
+            border: 3px solid $color-azul;
+
+            @media screen and (max-width: 900px) {
+                display: none;
+            }
+        }
+
+        video {
+            height: 25vh;
+            border-radius: 30px;
+            border: 3px solid $color-azul;
+
+            @media screen and (max-width: 900px) {
+                height: auto;
+                max-height: 30vh;
+                width: 100%;
+                margin-bottom: 4rem;
+            }
+        }
     }
     
 
+}
+
+
+
+.boton-insc {
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    .boton-inscripcion-evnt-ext {
+        text-decoration: none;
+        background-color: $color-naranja;
+        width: 100% !important;
+
+        border-radius: 25px;
+        padding: 1rem 2rem;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 2rem;
+        color: white;
+        text-align: center;
+
+    }
+}
+
+.boton-margin-ext {
+    margin-bottom: 3rem;
+}
+
+.auspiciante-slide {
+    background: $blanco;
+    border-radius: 50px;
+    border-radius: 50px;
+    background:  rgba($color: $color-azul, $alpha: 0.15);
+    box-shadow:    5px 5px 10px #bbc6c7,
+                        -5px -5px 10px #ffffff;
+    padding: 4rem 2rem;
+
+    display: flex;
+    justify-content: center;
+
+    width: 30%;
+
+    @media screen and (max-width: 900px) {
+        width: auto;
+        max-width: 50%;
+        text-align: center;
+    }
+    
+    @media screen and (max-width: 600px) {
+        width: auto;
+        max-width: 100%;
+        text-align: center;
+    }
+    
+
+        img {
+            max-width: 50%;
+            max-height: 75% !important;
+
+            @media screen and (max-width: 900px) {
+                
+                max-width: 80%;
+            }
+                
+        }
+}
+
+// .boton-inscripcion-evnt-ext {
+//     text-decoration: none;
+
+//     background-color: $color-naranja;
+//     border-radius: 25px;
+//     padding: 1rem 2rem;
+//     font-family: 'Poppins', sans-serif;
+//     font-weight: 600;
+//     font-size: 2rem;
+//     color: white;
+//     text-align: center;
+
+//     margin-top: 2rem;
+
+// }
+
+.p_after {
+    color: $color-azul-oscuro;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 320;
+    font-size: 1.5rem;
+                        
+    padding-top: 1rem;
 }
 
 .section2-eventoIndividual {
@@ -235,6 +355,10 @@
     padding-bottom: 6rem;
     background-color: rgba($color: $color-azul, $alpha: 0.15);
 
+}
+
+.last-section {
+    padding-bottom: 6rem;
 }
 
 table {
@@ -313,6 +437,22 @@ table, th, td {
     strong {
         font-weight: 450 !important;
     }
+}
+
+.link-int {
+    text-decoration: none;
+    color: $color-azul-oscuro;
+    font-weight: 450 !important;
+}
+
+.ul-eventoInd {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1.7rem;
+    color: $color-azul-oscuro;
+    padding-left: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .datos-expositores {
@@ -447,6 +587,15 @@ ul {
     strong {
         font-weight: 400;
     }
+}
+
+.padding-evt {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.margin-bottom-extra {
+    margin-bottom: 2rem;
 }
 
 

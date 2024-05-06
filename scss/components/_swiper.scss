@@ -141,6 +141,7 @@
         .swiper-slide {
 
             height: auto;
+            box-sizing: border-box !important;
             background: $blanco;
             border-radius: 50px;
             border-radius: 50px;
@@ -148,6 +149,7 @@
             transform: scale(0.7);
             opacity: 0.5;
             margin-bottom: 4rem;
+            padding-bottom: 3rem;
 
             box-shadow:    7px 7px 14px #bbc6c7,
              -7px -7px 14px #ffffff;
