@@ -470,3 +470,59 @@
 
     @include foto_evento;
 }
+
+.foto_evento_pde_2024 {
+    background-image: linear-gradient(
+        rgba($color-azul, 0.35),
+        rgba($color-azul, 0.35)
+    ),url("../img/foto_evento_pde_2024.JPG");
+
+    @include foto_evento;
+}
+
+.foto_evento_angio_2024 {
+    background-image: linear-gradient(
+        rgba($color-azul, 0.35),
+        rgba($color-azul, 0.35)
+    ),url("../img/foto_evento_angio_2024.jpg");
+
+    @include foto_evento;
+}
+
+.foto_evento_penca_2024 {
+
+    background-image: linear-gradient(
+        rgba($color-azul, 0.35),
+        rgba($color-azul, 0.35)
+    ),url("../img/foto_evento_penca_2024.jpg");
+
+    @include foto_evento;
+    
+}
+
+.foto_evento_angiohp_2024 {
+    background-image: linear-gradient(
+        rgba($color-azul, 0.35),
+        rgba($color-azul, 0.35)
+    ),url("../img/foto_evento_angiohp_2024.jpg");
+
+    @include foto_evento;
+}
+
+.foto_evento_diplomado_2024 {
+    background-image: linear-gradient(
+        rgba($color-azul, 0.35),
+        rgba($color-azul, 0.35)
+    ),url("../img/foto_evento_diplomado_2024.jpg");
+
+    @include foto_evento;
+}
+
+.foto_evento_tomografia_2024 {
+    background-image: linear-gradient(
+        rgba($color-azul, 0.35),
+        rgba($color-azul, 0.35)
+    ),url("../img/foto_evento_tomografia_2024.jpg");
+
+    @include foto_evento;
+}
