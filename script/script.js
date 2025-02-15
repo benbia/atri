@@ -53,40 +53,52 @@ const swiper = new Swiper('.swiper_inicio', {
 
 const s_years = document.getElementById('s_years');
 const s_proximos = document.getElementById('s_proximos');
+const s_2025 = document.getElementById('s_2025');
 const s_2024 = document.getElementById('s_2024')
 const s_2023 = document.getElementById('s_2023');
 const s_2022 = document.getElementById('s_2022');
+
 
 
 // ida
 
 function segundaSlide() {
   s_proximos.classList.toggle('hidden')
-  s_2024.classList.toggle('hidden')
+  s_2025.classList.toggle('hidden')
 }
 
 function terceraSlide() {
+  s_2025.classList.toggle('hidden')
   s_2024.classList.toggle('hidden')
-  s_2023.classList.toggle('hidden')
 }
 
 function cuartaSlide() {
+  s_2024.classList.toggle('hidden')
+  s_2023.classList.toggle('hidden')
+}
+
+function quintaSlide() {
   s_2023.classList.toggle('hidden')
   s_2022.classList.toggle('hidden')
+}
+
+function backToCuartaSlide() {
+  s_2022.classList.toggle('hidden')
+  s_2023.classList.toggle('hidden')
 }
 
 function backToTerceraSlide() {
-  s_2022.classList.toggle('hidden')
   s_2023.classList.toggle('hidden')
+  s_2024.classList.toggle('hidden')
 }
 
 function backToSegundaSlide() {
-  s_2023.classList.toggle('hidden')
   s_2024.classList.toggle('hidden')
+  s_2025.classList.toggle('hidden')
 }
 
 function backToPrimeraSlide() {
-  s_2024.classList.toggle('hidden')
+  s_2025.classList.toggle('hidden')
   s_proximos.classList.toggle('hidden')
 }
 
@@ -148,6 +160,15 @@ let numbers = 0
     console.log(slide.activeIndex)
   } else if (slide.activeIndex == 3 && numbers == 2) {
     cuartaSlide()
+    numbers = 3
+    console.log(slide.activeIndex)
+  } else if (slide.activeIndex == 4 && numbers == 3) {
+    quintaSlide()
+    numbers = 4
+    console.log(slide.activeIndex)
+
+  } else if (slide.activeIndex == 3 && numbers == 4) {
+    backToCuartaSlide()
     numbers = 3
     console.log(slide.activeIndex)
   } else if (slide.activeIndex == 2 && numbers == 3) {

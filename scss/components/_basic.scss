@@ -244,6 +244,47 @@
     }
 }
 
+// mision vision
+
+.mision-vision {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    
+    .m-s-div {
+        width: 50%;
+
+        background: $blanco;
+        border-radius: 50px;
+        border-radius: 50px;
+        background: #ffffff;
+        box-shadow:  7px 7px 14px #d9d9d9,
+                        -7px -7px 14px #ffffff;
+        padding: 4rem;
+
+        .icono-titulo {
+
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+            gap: 15px;
+            i {
+                font-size: 3.5rem;
+                color: $color-naranja;
+            }
+
+            h2 {
+                padding: 0;
+                margin: 0;
+                color: $color-naranja;
+            }
+        }
+    }
+}
+
 
 // beneficios
 
@@ -339,6 +380,16 @@
     .h2 {
         font-size: 3.3rem;
     }
+
+    .mision-vision {
+        flex-direction: column;
+
+        .m-s-div {
+            width: 100%;
+        }
+    }
+
+
 }
 
 @media screen and (max-width: 992px) and (orientation: landscape) {

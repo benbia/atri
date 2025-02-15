@@ -544,6 +544,39 @@
   }
 }
 
+.mision-vision {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.mision-vision .m-s-div {
+  width: 50%;
+  background: #ffffff;
+  border-radius: 50px;
+  border-radius: 50px;
+  background: #ffffff;
+  box-shadow: 7px 7px 14px #d9d9d9, -7px -7px 14px #ffffff;
+  padding: 4rem;
+}
+.mision-vision .m-s-div .icono-titulo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 15px;
+}
+.mision-vision .m-s-div .icono-titulo i {
+  font-size: 3.5rem;
+  color: #f48424;
+}
+.mision-vision .m-s-div .icono-titulo h2 {
+  padding: 0;
+  margin: 0;
+  color: #f48424;
+}
+
 .link_web--beneficios {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
@@ -610,6 +643,12 @@
   }
   .h2 {
     font-size: 3.3rem;
+  }
+  .mision-vision {
+    flex-direction: column;
+  }
+  .mision-vision .m-s-div {
+    width: 100%;
   }
 }
 @media screen and (max-width: 992px) and (orientation: landscape) {
@@ -1828,6 +1867,246 @@ footer .div_redes .icono_redes {
 }
 @media screen and (max-width: 600px) {
   .foto_evento_chile_2024 {
+    height: 200px;
+  }
+}
+
+.foto_evento_resonancia_2024 {
+  background-image: linear-gradient(rgba(71, 165, 174, 0.35), rgba(71, 165, 174, 0.35)), url("../img/foto_evento_resonancia_2024.jpg");
+  width: 100%;
+  height: 40%;
+  background-size: 100%;
+  background-size: cover;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+@media screen and (max-width: 600px) {
+  .foto_evento_resonancia_2024 {
+    height: 200px;
+  }
+}
+
+.foto_evento_alatra_2024 {
+  background-image: linear-gradient(rgba(71, 165, 174, 0.35), rgba(71, 165, 174, 0.35)), url("../img/foto_evento_alatra_2024.jpg");
+  width: 100%;
+  height: 40%;
+  background-size: 100%;
+  background-size: cover;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+@media screen and (max-width: 600px) {
+  .foto_evento_alatra_2024 {
+    height: 200px;
+  }
+}
+
+.foto_evento_grei_2024 {
+  background-image: linear-gradient(rgba(71, 165, 174, 0.35), rgba(71, 165, 174, 0.35)), url("../img/foto_evento_grei_2024.jpg");
+  width: 100%;
+  height: 40%;
+  background-size: 100%;
+  background-size: cover;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+@media screen and (max-width: 600px) {
+  .foto_evento_grei_2024 {
+    height: 200px;
+  }
+}
+
+.foto_evento_bayer_2024 {
+  background-image: linear-gradient(rgba(71, 165, 174, 0.35), rgba(71, 165, 174, 0.35)), url("../img/foto_evento_bayer_2024.jpg");
+  width: 100%;
+  height: 40%;
+  background-size: 100%;
+  background-size: cover;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+@media screen and (max-width: 600px) {
+  .foto_evento_bayer_2024 {
+    height: 200px;
+  }
+}
+
+.foto_evento_grei-master_2024 {
+  background-image: linear-gradient(rgba(71, 165, 174, 0.35), rgba(71, 165, 174, 0.35)), url("../img/foto_evento_grei-master_2024.jpg");
+  width: 100%;
+  height: 40%;
+  background-size: 100%;
+  background-size: cover;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+@media screen and (max-width: 600px) {
+  .foto_evento_grei-master_2024 {
+    height: 200px;
+  }
+}
+
+.foto_evento_bruno_2024 {
+  background-image: linear-gradient(rgba(71, 165, 174, 0.35), rgba(71, 165, 174, 0.35)), url("../img/foto_evento_bruno_2024.png");
+  width: 100%;
+  height: 40%;
+  background-size: 100%;
+  background-size: cover;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+@media screen and (max-width: 600px) {
+  .foto_evento_bruno_2024 {
+    height: 200px;
+  }
+}
+
+.foto_evento_radioproteccion_2024 {
+  background-image: linear-gradient(rgba(71, 165, 174, 0.35), rgba(71, 165, 174, 0.35)), url("../img/foto_evento_radioproteccion_2024.jpg");
+  width: 100%;
+  height: 40%;
+  background-size: 100%;
+  background-size: cover;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+@media screen and (max-width: 600px) {
+  .foto_evento_radioproteccion_2024 {
+    height: 200px;
+  }
+}
+
+.foto_evento_jcr_2024 {
+  background-image: linear-gradient(rgba(71, 165, 174, 0.35), rgba(71, 165, 174, 0.35)), url("../img/foto_evento_jcr_2024.jpg");
+  width: 100%;
+  height: 40%;
+  background-size: 100%;
+  background-size: cover;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+@media screen and (max-width: 600px) {
+  .foto_evento_jcr_2024 {
+    height: 200px;
+  }
+}
+
+.foto_evento_hemodinamia_2024 {
+  background-image: linear-gradient(rgba(71, 165, 174, 0.35), rgba(71, 165, 174, 0.35)), url("../img/foto_evento_hemodinamia_2024.jpg");
+  width: 100%;
+  height: 40%;
+  background-size: 100%;
+  background-size: cover;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+@media screen and (max-width: 600px) {
+  .foto_evento_hemodinamia_2024 {
+    height: 200px;
+  }
+}
+
+.foto_evento_diplomado-ecihem_2024 {
+  background-image: linear-gradient(rgba(71, 165, 174, 0.35), rgba(71, 165, 174, 0.35)), url("../img/foto_evento_diplomado-ecihem_2024.jpg");
+  width: 100%;
+  height: 40%;
+  background-size: 100%;
+  background-size: cover;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+@media screen and (max-width: 600px) {
+  .foto_evento_diplomado-ecihem_2024 {
+    height: 200px;
+  }
+}
+
+.foto_evento_padel_2024 {
+  background-image: linear-gradient(rgba(71, 165, 174, 0.35), rgba(71, 165, 174, 0.35)), url("../img/foto_evento_padel_2024.jpg");
+  width: 100%;
+  height: 40%;
+  background-size: 100%;
+  background-size: cover;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+@media screen and (max-width: 600px) {
+  .foto_evento_padel_2024 {
+    height: 200px;
+  }
+}
+
+.foto_evento_encuesta_2024 {
+  background-image: linear-gradient(rgba(71, 165, 174, 0.35), rgba(71, 165, 174, 0.35)), url("../img/foto_evento_encuesta_2024.jpg");
+  width: 100%;
+  height: 40%;
+  background-size: 100%;
+  background-size: cover;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+@media screen and (max-width: 600px) {
+  .foto_evento_encuesta_2024 {
+    height: 200px;
+  }
+}
+
+.foto_evento_septemir_2024 {
+  background-image: linear-gradient(rgba(71, 165, 174, 0.35), rgba(71, 165, 174, 0.35)), url("../img/foto_evento_septemir_2024.jpg");
+  width: 100%;
+  height: 40%;
+  background-size: 100%;
+  background-size: cover;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+@media screen and (max-width: 600px) {
+  .foto_evento_septemir_2024 {
+    height: 200px;
+  }
+}
+
+.foto_evento_tavi_2024 {
+  background-image: linear-gradient(rgba(71, 165, 174, 0.35), rgba(71, 165, 174, 0.35)), url("../img/foto_evento_tavi_2024.jpg");
+  width: 100%;
+  height: 40%;
+  background-size: 100%;
+  background-size: cover;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+@media screen and (max-width: 600px) {
+  .foto_evento_tavi_2024 {
+    height: 200px;
+  }
+}
+
+.foto_evento_mesa_2025 {
+  background-image: linear-gradient(rgba(71, 165, 174, 0.35), rgba(71, 165, 174, 0.35)), url("../img/foto_evento_mesa_2025.png");
+  width: 100%;
+  height: 40%;
+  background-size: 100%;
+  background-size: cover;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+@media screen and (max-width: 600px) {
+  .foto_evento_mesa_2025 {
+    height: 200px;
+  }
+}
+
+.foto_evento_gradientes_2025 {
+  background-image: linear-gradient(rgba(71, 165, 174, 0.35), rgba(71, 165, 174, 0.35)), url("../img/foto_evento_gradientes_2025.jpg");
+  width: 100%;
+  height: 40%;
+  background-size: 100%;
+  background-size: cover;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+@media screen and (max-width: 600px) {
+  .foto_evento_gradientes_2025 {
     height: 200px;
   }
 }
