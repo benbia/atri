@@ -681,3 +681,33 @@
 
     @include foto_evento;
 }
+
+.foto_evento_21feb_2025 {
+    background-image: linear-gradient(
+        rgba($color-azul, 0.35),
+        rgba($color-azul, 0.35)
+    ),url("../img/foto_evento_21feb_2025.png");
+
+    @include foto_evento;
+}
+
+// 
+
+.foto_evento_salto_2025 {
+    background-image: linear-gradient(
+        rgba($color-azul, 0.35),
+        rgba($color-azul, 0.35)
+    ),url("../img/foto_evento_salto_2025.jpeg");
+
+    @include foto_evento;
+}
+
+.foto_evento_congreso_2025 {
+    background-image: linear-gradient(
+        rgba($color-azul, 0.35),
+        rgba($color-azul, 0.35)
+    ),url("../img/foto_evento_congreso_2025.jpg");
+
+    @include foto_evento;
+}
+
