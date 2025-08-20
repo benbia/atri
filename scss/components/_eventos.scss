@@ -711,3 +711,39 @@
     @include foto_evento;
 }
 
+.foto_evento_diplomado_2025 {
+    background-image: linear-gradient(
+        rgba($color-azul, 0.35),
+        rgba($color-azul, 0.35)
+    ),url("../img/foto_evento_diplomado_2025.jpg");
+
+    @include foto_evento;
+}
+
+.foto_evento_noviembre_2025 {
+    background-image: linear-gradient(
+        rgba($color-azul, 0.35),
+        rgba($color-azul, 0.35)
+    ),url("../img/8N Evento.jpg");
+
+    @include foto_evento;
+}
+
+.foto_evento_cordoba_2025 {
+    background-image: linear-gradient(
+        rgba($color-azul, 0.35),
+        rgba($color-azul, 0.35)
+    ),url("../img/foto_evento_cordoba_2025.jpg");
+
+    @include foto_evento;
+}
+
+.foto_evento_bayer_2025 {
+    background-image: linear-gradient(
+        rgba($color-azul, 0.35),
+        rgba($color-azul, 0.35)
+    ),url("../img/foto_evento_bayer_2025.jpg");
+
+    @include foto_evento;
+}
+

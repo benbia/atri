@@ -55,6 +55,44 @@
 
 ///// evento!
 
+.aclaracion-evento {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 30px;
+
+    background-color: rgba($color: $color-azul, $alpha: 0.15);
+
+    
+
+    h3 {
+        color: $color-azul-oscuro;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 2.2rem;
+
+        @media screen and (max-width: 900px) {
+            font-size: 1.8rem;
+        }
+    }
+
+    span {
+        color: $color-verde;
+        font-weight: 600;
+    }
+
+    .rojo {
+        color: $color-rojo;
+        font-weight: 600;
+    }
+}
+
+.not-bold {
+    font-weight: 300 !important;
+}
+
 .section1-eventoIndividual {
     padding-top: 90px;
     padding-left: 3rem;
@@ -155,6 +193,12 @@
                         font-size: 1.8rem;
                         
                         padding-top: 0.5rem;
+
+                        a {
+                            text-decoration: none;
+                            font-weight: 500;
+                            color: $color-azul-oscuro
+                        }
                     }
                 }
             }
@@ -431,12 +475,21 @@ table, th, td {
 .p_normal-evento {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
-    font-size: 1.7rem;
+    font-size: 2rem;
     color: $color-azul-oscuro;
 
     strong {
         font-weight: 450 !important;
     }
+}
+
+.ul-evento-simple {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1.7rem;
+    color: $color-azul-oscuro;
+    padding-left: 2rem;
+    margin-top: 2rem;
 }
 
 .link-int {
@@ -513,13 +566,13 @@ table, th, td {
     padding-bottom: 2rem;
     margin-top: -1.5rem;
     font-size: 2rem;
-    font-weight: 270;
+    font-weight: 300;
 
     .link-locomocionALojamiento {
         text-decoration: none;
         color: $color-azul-oscuro;
         font-family: 'Poppins', sans-serif;
-        font-weight: 420;
+        font-weight: 450;
         font-size: 2rem;
     }
 }
@@ -536,11 +589,21 @@ table, th, td {
 
 .locomocionYAlojamiento {
     display: flex;
-    gap: 4rem;
+    gap: 5rem;
 
     @media screen and (max-width: 900px) {
         flex-direction: column;
-        gap: 3rem;
+        gap: 5rem;
+    }
+
+    img {
+        max-height: 700px;
+        border-radius: 50px;
+        border: 6px solid $color-azul;
+
+        @media screen and (max-width: 900px) {
+            width: 100%;
+        }
     }
 
     iframe {
@@ -551,6 +614,10 @@ table, th, td {
             width: 100%;
         }
     }
+}
+
+.margin-normal {
+    margin: 0 !important
 }
 
 .subir {
@@ -592,6 +659,16 @@ ul {
 .padding-evt {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    p {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        font-size: 1.7rem;
+        color: $color-azul-oscuro;
+    }
 }
 
 .margin-bottom-extra {
