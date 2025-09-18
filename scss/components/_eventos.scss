@@ -747,3 +747,21 @@
     @include foto_evento;
 }
 
+.foto_evento_congreso-arg_2025 {
+    background-image: linear-gradient(
+        rgba($color-azul, 0.35),
+        rgba($color-azul, 0.35)
+    ),url("../img/foto_evento_actualizacion_2025.jpg");
+
+    @include foto_evento;
+}
+
+.foto_evento_integracion_2025 {
+    background-image: linear-gradient(
+        rgba($color-azul, 0.35),
+        rgba($color-azul, 0.35)
+    ),url("../img/foto_evento_integracion_2025.jpeg");
+
+    @include foto_evento;
+}
+
